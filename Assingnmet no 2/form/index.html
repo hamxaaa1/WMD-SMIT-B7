@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <style>
+    .h-tag {
+      color: darkred;
+      margin-left: 80%;
+      text-decoration: underline;
+      margin-top: 0px;
+      margin-bottom: 2px;
+    }
+    .div {
+      background-color: #1bcfe309;
+      margin: 0;
+      padding: 9px;
+    }
+    .aa {
+      margin-left: 50px;
+      padding-right: 25%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 20px;
+      border-width: 1px;
+      border-style: solid;
+      background-color:#E0E0E0;
+    }
+    .bb {
+      margin-left: 84px;
+      padding-right: 24.5%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 20px;
+      border-width: 1px;
+      border-style: solid;
+      background-color:#E0E0E0;
+
+    }
+    .mb {
+      margin-left: 76px;
+      padding-right: 24.5%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 20px;
+      border-width: 1px;
+      border-style: solid;
+      background-color:#E0E0E0;
+
+    }
+    .dob {
+      margin-left: 40px;
+      padding-right: 28.6%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .add {
+      margin-left: 73.8px;
+      padding-right: 24%;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      border-radius: 20px;
+      border-width: 1px;
+      border-style: solid;
+      background-color:#E0E0E0;
+
+    }
+    .cit {
+      margin-left: 97.9px;
+      padding-right: 24%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 20px;
+      border-width: 1px;
+      border-style: solid;
+      background-color:#E0E0E0;
+
+    }
+    .areaa {
+      margin-left: 70px;
+      padding-right: 24%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 20px;
+      border-width: 1px;
+      border-style: solid;
+      background-color:#E0E0E0;
+
+    }
+    .statee {
+      margin-left: 94px;
+      padding-right: 23.8%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 20px;
+      border-width: 1px;
+      border-style: solid;
+      background-color:#E0E0E0;
+
+    }
+    .quali {
+      margin-right: 43px;
+    }
+    .specii {
+      margin-right: 30px;
+
+    }
+    .checkii {
+      margin-left: 133px;
+    }
+    .passi {
+      margin-left: 64px;
+      padding-right: 23.8%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 20px;
+      border-width: 1px;
+      border-style: solid;
+      background-color:#E0E0E0;
+
+    }
+    .regiss {
+      background-color:#04AA6D;
+      border: none;
+      padding: 10px;
+      border-radius: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h4 class="h-tag">Student Registration Form </h4>
+  <div class="div">
+    <form>
+      <label for="fname">First Name&#58;</label>
+      <input class="aa" type="text" placeholder="Enter your first name" id="fname" name="fname"><br><br>
+      <label for="lname">Last Name&#58;</label>
+      <input class="aa" type="text" placeholder="Enter your last name" id="lname" name="lname">  <br><br>
+      <label for="e-mail">Email&#58;</label>
+      <input class="bb" type="text" placeholder="it should contain @" id="e-mail" name="lname">  <br><br>
+      <label for="number">Mobile&#58;</label>
+      <input class="mb" type="text" placeholder="only 10 digits are allowed" id="number" name="lname" max="9" >  <br><br>
+      <label>Gender&#58;</label>    
+      <input class="mb" type="radio" id="male" name="genderr">
+      <label for="genderr">Male</label> 
+      <input type="radio" id="female" name="genderr">
+      <label for="genderr">Female</label>  <br><br>
+      <label for="DOB">Date of Birth&#58;</label>
+      <input class="dob" type="date" id="DOB"><br><br>
+      <label for="Addresss">Address&#58;</label>
+      <textarea class="add" id="Addresss"></textarea><br><br>
+      <label for="city">City&#58;</label>
+      <input class="cit" type="text" id="city" name="fname"><br><br>
+      <label for="area">Area Pin&#58;</label>
+      <input class="areaa" type="text" id="area" name="lname">  <br><br>
+      <label for="state">State&#58;</label>
+      <input class="statee" type="text" id="state">  <br><br>
+      <label class="quali" for="Qualification-1">Qualification&#58;</label>
+      <select name="Qualification" id="Qualification-1">
+        <option disabled selected hidden>Select Qualifications</option>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Computer Architecture</option>
+        <option>Tele Communication</option>
+      </select><br><br>
+      <label class="specii">Specialization&#58;</label>
+      <input type="checkbox" id="CS">
+      <label for="CS">Computer Science</label><br><br>
+      <input class="checkii" type="checkbox" id="IT">
+      <label for="IT">Information Technology</label><br><br>
+      <input class="checkii" type="checkbox" id="CA">
+      <label for="CA">Computer Architecture</label><br><br>
+      <input class="checkii" type="checkbox" id="TC">
+      <label for="TC">Tele Communication</label><br><br>
+      <label for="paswrd">Password&#58;</label>
+      <input class="passi" type="text" id="paswrd"><br><br>
+      <input class="regiss" type="submit" value="Registered">
+  </div>
+
+</body>
+</html>
