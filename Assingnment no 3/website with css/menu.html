@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .spoon-icon {
+      width: 27px;
+      vertical-align: middle;
+    }
+    .heading {
+      display: inline;
+    }
+    .search-icon {
+      width: 27px;
+      height: 27px;
+      vertical-align: middle;
+    
+      
+    }
+    .text-bar {
+      height: 30px;
+      width: 50%;
+      padding-left: 10px;
+      font-size: 15px;
+
+      border-width: 3px;
+      border-color: rgb(255, 0, 0);
+      border-radius: 20px;
+      border-style: solid;
+
+      
+    }
+    .search-button {
+      border-width: 3px;
+      background-color: rgb(225, 37, 37);
+      margin-left: -44px;
+      border-color: rgb(255, 0, 0);
+      border-radius: 20px;
+      border-style: solid;
+      
+      
+    }
+    .form-f {
+      display: flex;
+    }
+    .container-1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: rgb(128, 128, 128);
+      height: 60px;
+      align-items: center;
+    }
+    .container-3 {
+      flex:2;
+      margin-left: 50px;
+    }
+    .container-4 {
+      margin-right: 10px;
+    }
+    .container-2 {
+      margin-right: 100px;
+    }
+    
+    .a-tag {
+      padding-left: 30px;
+      color: black;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .a-tag:hover {
+      font-weight: bold;
+      opacity: 0.4px;
+      transition: 0.3s;
+      color: rgb(193, 204, 68);
+    }
+    .divi-spany {
+      margin-top: 30px;
+      margin-left: 85%;
+      width: 160px;
+      box-shadow: 10px 10px 10px rgba(55, 155, 8, 0.4);
+
+    }
+    .divi-spany {
+      margin-top: 30px;
+      margin-left: 85%;
+      width: 160px;
+      padding-left: 9px;
+      box-shadow: 5px 10px 20px rgba(155, 55, 8, 0.7);
+
+    }
+    .divv-span{
+      width: 160px;
+    }
+    .span-1 {
+      font-size: 21px;
+      color: rgb(38, 116, 116);
+      font-weight: bold;
+      
+      
+    }
+    .span-2 {
+      font-size: 19px;
+      color: blueviolet;
+      font-weight: bold;
+      
+
+
+    }
+    .span-3 {
+      font-size: 19px;
+      color: brown;
+      font-weight: bold;
+
+    }
+    .order-button {
+      font-size: 14px;
+      padding: 12px;
+      color: rgb(179, 179, 27);
+      font-weight: bold;
+      background-color: rgba(200, 37, 127, 0.564);
+      border-color: orangered;
+      border-style: solid;
+      border-width: 1.5px;
+      border-radius: 20px;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-bottom: 4px;
+    }
+    .order-button:hover {
+      padding: 14px;
+    }
+    .div {
+      margin-top: 40px;
+      width: 440px;
+      display: inline-block;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+      margin-right: 130px;
+      margin-left: 40px;
+    }
+  
+    .div-a {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .div-b {
+      display: inline-block;
+      margin-top: 25px;
+      margin-left: 10px;
+    } 
+    .pizza-button {
+      font-size: 14px;
+      padding: 11px;
+      padding-left: 33px;
+      padding-right: 33px;
+      font-weight: bold;
+      border-radius: 20px;
+      border: none;
+      background-color: lightcoral;
+      cursor: pointer;
+      display: block;
+      
+  
+    }
+    
+    .x-p {
+      margin-left: 6px;
+      align-items: center;
+      color: gray;
+      margin-bottom: 0;
+    }
+    .large-p {
+      margin-left: 6px;
+      width: 180px;
+      color: gray;
+      font-size: 14px;
+      margin-top: 2px;
+    }
+    .rs-p {
+      margin-left: 6px;
+      font-weight: bold;
+      font-size: 17px;
+    }
+    .plus-button {
+  color: white;
+  font-size: 23px;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(227, 234, 22);
+  cursor: pointer;
+  
+  margin-bottom: 0;
+}
+.div-c {
+  display: inline-block;
+  margin-right: 90px;
+}
+.div-d {
+  display: inline-block;
+}
+.pizzzaa-a {
+  height: 200px;
+  width: 180px;
+  border-radius: 20px;
+}
+.div-e {
+  display: inline-block;
+  margin-right: 0;
+}
+.div-f {
+  display: inline-block;
+  margin-left: -5px;
+}
+.person-icon {
+  margin-left: 5px;
+  height: 20px;
+  vertical-align: middle;
+  
+}
+.body {
+  margin: 0;
+}
+  
+  </style>
+</head>
+
+<body style="margin: 0;
+background-color: rgba(0, 0, 0, 0.906);">
+  <div class="container-1">
+    <div class="container-2">
+      <img class="spoon-icon" src="spoon-and-fork-icon-25.jpg">
+      <p class="heading">Hamza's Cuisine</p>
+    </div>
+  
+    <div class="container-3">
+      <form class="form-f" action="">
+        <input class="text-bar" type="text" placeholder="Search..">
+        <button class="search-button" type="submit"><img class="search-icon" src="kisspng-search-box-computer-icons-transparency-clip-art-sc-search-svg-vector-icon-free-icons-uihere-5d2d14491581e0.9336197015632354010881.png" alt=""></button>
+      </form>
+    </div>
+    <div class="container-4">
+      <a href="index.html" class="a-tag" href="">Home</a>
+      <a href="menu.html" class="a-tag" href="">Menu</a>
+      <a href="about.html" class="a-tag" href="">About</a>
+      <a href="timing.html" class="a-tag" href="">Timings</a>
+      <a href="contact.html" class="a-tag" href="">Contact us</a>
+
+    </div>
+  </div>
+  <div class="divi-spany">
+    <div class="divv-span">
+    <p> <span class="span-1">we serve</span> <span class="span-2">delicious</span> <span class="span-3">fast food here</span></p>
+
+    </div>
+    <div>
+      <button type="submit" class="order-button">Click For Order</button>
+
+    </div>
+  </div>
+  <div class="div">
+    <div class="div-a">
+    <img class="pizzzaa-a" src="fresh-homemade-italian-pizza-margherita-with-buffalo-mozzarella-basil_914391-419.avif" alt="">
+
+    </div>
+    <div class="div-b">
+      <button class="pizza-button">Special Pizza Large</button>
+      <div class="div-e">
+    <p class="x-p">3x</p>
+
+      </div>
+      <div class="div-f">
+        <img class="person-icon" src="person-icon-1671.png" alt="">
+      </div>
+    <p class="large-p">1 x Large Pizza with New Exciting Flavor</p>
+    <div class="div-c">
+    <p class="rs-p">Rs.1699</p>
+
+    </div>
+    <div class="div-d">
+    <button class="plus-button">+</button>
+
+    </div>
+    </div>
+    
+  </div>
+
+
+  <div class="div">
+    <div class="div-a">
+    <img class="pizzzaa-a" src="WhatsApp Image 2024-01-03 at 7.39.26 AM.jpeg" alt="">
+
+    </div>
+    <div class="div-b">
+      <button class="pizza-button">Italian Pizza Medium</button>
+      <div class="div-e">
+    <p class="x-p">2x</p>
+
+      </div>
+      <div class="div-f">
+        <img class="person-icon" src="person-icon-1671.png" alt="">
+      </div>
+    <p class="large-p">1 x Medium Pizza with New Exciting Flavor</p>
+    <div class="div-c">
+    <p class="rs-p">Rs.1999</p>
+
+    </div>
+    <div class="div-d">
+    <button class="plus-button">+</button>
+
+    </div>
+    </div>
+    
+  </div>
+
+  <div class="div">
+    <div class="div-a">
+    <img class="pizzzaa-a" src="WhatsApp Image 2024-01-03 at 7.39.19 AM (1).jpeg" alt="">
+
+    </div>
+    <div class="div-b">
+      <button class="pizza-button">Special Steak Burger</button>
+      <div class="div-e">
+    <p class="x-p">1x</p>
+
+      </div>
+      <div class="div-f">
+        <img class="person-icon" src="person-icon-1671.png" alt="">
+      </div>
+    <p class="large-p">1 x Jumbo Burger with New Exciting Flavor</p>
+    <div class="div-c">
+    <p class="rs-p">Rs.699</p>
+
+    </div>
+    <div class="div-d">
+    <button class="plus-button">+</button>
+
+    </div>
+    </div>
+    
+  </div>
+
+  <div class="div">
+    <div class="div-a">
+    <img class="pizzzaa-a" src="4k-restaurant-food-menu-burger-pizza-cake-food-menu-ultra-hd-ai-generated-image_669273-223.avif" alt="">
+
+    </div>
+    <div class="div-b">
+      <button class="pizza-button">Special Small Burger</button>
+      <div class="div-e">
+    <p class="x-p">1x</p>
+
+      </div>
+      <div class="div-f">
+        <img class="person-icon" src="person-icon-1671.png" alt="">
+      </div>
+    <p class="large-p">1 x Small Burger with New Exciting Flavor</p>
+    <div class="div-c">
+    <p class="rs-p">Rs.499</p>
+
+    </div>
+    <div class="div-d">
+    <button class="plus-button">+</button>
+
+    </div>
+    </div>
+    
+  </div>
+
+
+  <div class="div">
+    <div class="div-a">
+    <img class="pizzzaa-a" src="122627_Bow-Ties-with-Sausage-Tomatoes-and-Cream_Photo-by-Elijah-3b861a830595401da6c617cfd91ac22b.webp" alt="">
+
+    </div>
+    <div class="div-b">
+      <button class="pizza-button">Special Full Pasta</button>
+      <div class="div-e">
+    <p class="x-p">2x</p>
+
+      </div>
+      <div class="div-f">
+        <img class="person-icon" src="person-icon-1671.png" alt="">
+      </div>
+    <p class="large-p">1 x Full Pasta with New Exciting Flavor</p>
+    <div class="div-c">
+    <p class="rs-p">Rs.899</p>
+
+    </div>
+    <div class="div-d">
+    <button class="plus-button">+</button>
+
+    </div>
+    </div>
+    
+  </div>
+
+  <div class="div">
+    <div class="div-a">
+    <img class="pizzzaa-a" src="download (2).jpeg" alt="">
+
+    </div>
+    <div class="div-b">
+      <button class="pizza-button">Special Crispy Hotwings</button>
+      <div class="div-e">
+    <p class="x-p">3x</p>
+
+      </div>
+      <div class="div-f">
+        <img class="person-icon" src="person-icon-1671.png" alt="">
+      </div>
+    <p class="large-p">1 x Crispy Hotwings with New Exciting Flavor</p>
+    <div class="div-c">
+    <p class="rs-p">Rs.599</p>
+
+    </div>
+    <div class="div-d">
+    <button class="plus-button">+</button>
+
+    </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>
