@@ -76,14 +76,60 @@
       transition: 0.3s;
       color: rgb(193, 204, 68);
     }
-  
+    .divi-spany {
+      margin-top: 30px;
+      margin-left: 85%;
+      width: 160px;
+      box-shadow: 10px 10px 10px rgba(55, 155, 8, 0.4);
+
+    }
+    .divv-span{
+      width: 160px;
+    }
+    .span-1 {
+      font-size: 21px;
+      color: rgb(38, 116, 116);
+      font-weight: bold;
+      
+      
+    }
+    .span-2 {
+      font-size: 19px;
+      color: blueviolet;
+      font-weight: bold;
+      
+
+
+    }
+    .span-3 {
+      font-size: 19px;
+      color: brown;
+      font-weight: bold;
+
+    }
+    .order-button {
+      font-size: 14px;
+      padding: 12px;
+      color: orangered;
+      font-weight: bold;
+      background-color: white;
+      border-color: orangered;
+      border-style: solid;
+      border-width: 3px;
+      border-radius: 20px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .order-button:hover {
+      padding: 14px;
+    }
     .open-tag {
-      margin-top: 80px;
       text-align: center;
       color: brown;
-      text-decoration: underline;
     }
     .content-table {
+      text-align: left;
+      background-color: #009879;
       border-collapse: collapse;
       margin: 25px 0;
       font-size: 14.55px;
@@ -95,8 +141,8 @@
       margin-right: auto;
     }
     .content-table thead tr {
-      background-color: #009879;
       color: #ffffff;
+      background-color: #009879;
       text-align: left;
       font-weight: bold;
     }
@@ -108,7 +154,7 @@
       border-bottom: 1px solid #dddddd;
     }
     .content-table tbody tr:nth-of-type(even) {
-      background-color: #f3f3f3;
+      background-color: rgba(128, 128, 128, 0.804);
     }
     .content-table tbody tr:last-of-type {
       border-bottom: 2px solid #009879;
@@ -120,7 +166,7 @@
   </style>
 </head>
 <body style="margin: 0;
-background-color: rgba(0, 0, 0, 0.146);">
+background-color: black;">
   <div class="container-1">
     <div class="container-2">
       <img class="spoon-icon" src="spoon-and-fork-icon-25.jpg">
@@ -142,45 +188,38 @@ background-color: rgba(0, 0, 0, 0.146);">
 
     </div>
   </div>
+  <div class="divi-spany">
+    <div class="divv-span">
+    <p> <span class="span-1">we serve</span> <span class="span-2">delicious</span> <span class="span-3">fast food here</span></p>
 
+    </div>
+    <div>
+      <button type="submit" class="order-button">Click For Order</button>
 
-
+    </div>
+  </div>
   <h2 class="open-tag">Opening hours</h2>
-
-
   <table class="content-table">
-    <thead>
       <tr>
-        <th></th>
         <th>Days</th>
         <th>Timing</th>
       </tr>
     <tr>
-    </thead>
-    
-    <tbody>
-      <tr>
-        <td>1</td>
       <td>Monday - Thursday</td>
       <td>9am - 10pm</td>
     </tr>
-    <tr class="active-row">
-      <td>2</td>
+    <tr>
       <td>Friday</td>
       <td>9am - 11am</td>
     </tr>
     <tr>
-      <td>3</td>
       <td>Saturday</td>
       <td>Closed</td>
     </tr>
-    <tr class="active-row">
-      <td>4</td>
+    <tr>
       <td>Sunday</td>
       <td>9am - 12pm</td>
     </tr>
-    </tbody>
-    
   </table>
 </body>
 </html>
