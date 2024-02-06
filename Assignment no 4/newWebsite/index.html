@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+    }
+    .First-main-div {
+      background-color: rgba(128, 128, 128, 0.057);
+      width: 1170px;
+      margin-top: 15px;
+      margin-left: 45px;
+      padding-top: 10px;
+    }
+    .div-img-tropico,
+    .div-a-img-button {
+      display: inline-block;
+    }
+    .div-img-tropico {
+      width: 500px;
+      
+    }
+    .tropiko {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: -3px;
+      vertical-align: middle;
+
+    }
+    .orange-img {
+      height: 38px;
+      width: 40px;
+      vertical-align: middle;
+      margin-left: 60px;
+    }
+    a{
+      text-decoration: none;
+      font-size: 14px;
+      color: black;
+      margin-right: 55px;
+    }
+    a:hover {
+      font-weight: bold;
+      transition: 0.2s;
+    }
+    .search-icon {
+      vertical-align: middle;
+      height: 20px;
+    }
+    .qoute-button {
+      margin-left: 35px;
+      background-color: rgba(255, 68, 0, 0.797);
+      border: none;
+      padding: 7px 11px;
+      color: white;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .div-p-button,
+    .div-fruit-img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .div-fruit-img {
+      margin-top: 40px;
+      margin-left: 75px;
+    }
+    .div-p-button {
+      margin-left: 60px;
+    }
+    .welcome-p {
+      font-size: 45px;
+      font-weight: bolder;
+      width: 344px;
+      line-height: 50px;
+    }
+    .paragraph-p {
+      margin-top: -5px;
+      font-size: 14px;
+      width: 430px;
+      line-height: 18px;
+    }
+    .shop-button,
+    .contactUs-button,
+    .button-readMore,
+    .buyNow-button,
+    .send-button,
+    .subcribe-button {
+      padding: 10px 26px;
+      border: none;
+      color: white;
+      font-size: 12px;
+      margin-right: 7px;
+      cursor: pointer;
+    }
+    .shop-button,
+    .send-button,
+    .subcribe-button {
+      background-color: rgba(255, 68, 0, 0.797);
+    }
+    .contactUs-button,
+    .button-readMore,
+    .buyNow-button {
+      background-color: black;
+    }
+    .buttons-div {
+      margin-top: 40px;
+    }
+    .fruit-plate-image {
+      height: 270px;
+    }
+    .services-container-2 {
+      margin-top: 70px;
+    }
+    .Second-main-div {
+      margin-top: 60px;
+    }
+    .Services-p-tag {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .many-varition-p-tag {
+      font-size: 13px;
+      text-align: center;
+      margin-top: 7px;
+    }
+    .orange-container-div {
+      border: 1px;
+      border-color: black;
+      border-style: solid;
+      border-color: grey;
+      width: 280px;
+      padding-top: 50px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 0px;
+      margin-left: 30px;
+      display: inline-block;
+    }
+    .orange-img-black {
+      height: 46px;
+      width: 47px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    .orange-p {
+      text-align: center;
+      color: rgba(255, 68, 0, 0.68);
+      font-size: 17px;
+      font-weight: bold;
+    }
+    .variations-p-tag {
+      margin-top: -5px;
+      width: 280px;
+      text-align: center;
+      line-height: 22px;
+    }
+    .orange-container-div-main,
+    .grapes-container-div-main,
+    .gauva-container-div-main {
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 24px;
+    }
+    .div-button-readMore {
+      margin-top: 45px;
+      text-align: center;
+    }
+    .freshFruits-p,
+    .testimonial-p {
+      text-align: center;
+      font-size: 23px;
+      font-weight: bold;
+      margin-top: 60px;
+      margin-bottom: 0;
+    }
+    .bestFreshOranges-container {
+      margin-left: 65px;
+      display: inline-block;
+    }
+    .bestFreshOranges-p {
+      font-size: 21px;
+    }
+    .majority-have-p {
+      font-size: 14.5px;
+      width: 600px;
+      line-height: 18px;
+    }
+    .buyNow-button {
+      margin-top: 20px;
+    }
+    .orange-png-inline-div {
+      display: inline-block;
+      margin-left: 180px;
+    }
+    .big-orange-img {
+      height: 140px;
+    }
+    .grapes-png-img {
+      height: 180px;
+      margin-left: 70px;
+    }
+    .gauva-png-img {
+      height: 160px;
+      margin-left: 30px;
+    }
+    .divOfBestOrange-container,
+    .divOfBestGrape-container,
+    .divOfBestGauva-container {
+      margin-top: 60px;
+    }
+    .client-div {
+      text-align: center;
+    }
+    .client-img {
+      height: 270px;
+    }
+    .Johnhex-div {
+      text-align: center;
+    }
+    .Johnhex-p {
+      font-size: 19px;
+      margin-bottom: 40px;
+    }
+    .Johnhex-paragraph {
+      font-size: 13px;
+      margin-top: -9px;
+
+    }
+    .Fourth-main-div {
+      margin-top: 110px;
+    }
+    .Fifth-main-div {
+      margin-top: 150px;
+    }
+    .contact-div {
+      margin-left: 65px;
+      display: inline-block;
+    }
+    .contact-lable {
+      display: block;
+      font-size: 23px;
+      font-weight: bold;
+      margin-bottom: 35px;
+    }
+    .input-fields,
+    .input-fieldss {
+      display: block;
+      margin-bottom: 20px;
+      width: 550px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-width: 1px;
+      outline: none;
+    }
+    .input-fieldss {
+      margin-top: 50px;
+    }
+    .send-button {
+      margin-top: 25px;
+    }
+    .half-orange-img-div {
+      display: inline-block;
+    }
+    .half-orange-img {
+      height: 300px;
+      margin-left: 482.36px;
+    }
+    .fruits-list-div {
+      width: 110px;
+      margin-left: 60px;
+      display: inline-block;
+      margin-right: 90px;
+    }
+    .randomised-tag {
+      font-size: 14px;
+      line-height: 19px;
+      margin-top: -3px;
+    }
+    .fb-img-div,
+    .github-img-div,
+    .linkedIn-img-div,
+    .insta-img-div {
+      display: inline-block;
+    }
+    .fb-img,
+    .linkedIn-img,
+    .insta-img,
+    .github-img {
+      height: 36px;
+    }
+    .linkedIn-img,
+    .insta-img,
+    .github-img {
+      margin-left: -45px;
+    }
+    .followUs-p-tag {
+      font-size: 17px;
+    }
+    .social-img-div {
+      margin-bottom: 15px;
+    }
+    .subcribe-lable {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    .subcribe-input {
+      width: 210px;
+      padding: 5px;
+      margin-bottom: 12px;
+    }
+    .subcribe-button {
+      font-size: 15px;
+    }
+    .follow-us-div {
+      display: inline-block;
+      margin-left: 100px;
+    }
+    .Sixth-main-div {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .copyright-div {
+      font-size: 14.5px;
+      text-align: center;
+      background-color: rgba(128, 128, 128, 0.457);
+      padding: 3px;
+    }
+  
+  </style>
+</head>
+<body>
+  <div id="Home-1" class="First-main-div">
+    <div class="header-div">
+      <div class="div-img-tropico">
+        <!-- Image -->
+        <img class="orange-img" src="logo.png" alt="">
+          <!-- tropiko -->
+          <p class="tropiko">TROPIKO</p>
+      </div>
+      <div class="div-a-img-button">
+        <!-- Home -->
+        <a href="#Home-1">Home</a>
+        <!-- Fruits -->
+        <a href="#Fruits-2">Fruits</a>
+        <!-- Services -->
+        <a href="#Services-3">Services</a>
+        <!-- Contact us -->
+        <a href="#ContactUs-4">Contact us</a>
+        <!-- Icon of Search -->
+        <img class="search-icon" src="search-icon.png" alt="">
+        <!-- Button of Get a Quote -->
+        <button class="qoute-button">GET A QUOTE</button>
+      </div>
+    </div>
+  
+    <div>
+      <div class="div-p-button">
+        <p class="welcome-p">
+          Welcome to Our Fruits Shop
+        </p>
+        <p class="paragraph-p">
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+        </p>
+        <div class="buttons-div">
+          <button class="shop-button">
+            SHOP NOW
+          </button>
+          <button class="contactUs-button">
+            CONTACT US
+          </button>
+        </div>
+      
+      </div>
+      <div class="div-fruit-img">
+        <img class="fruit-plate-image" src="slide-img.png" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <div id="Services-3" class="Second-main-div">
+    <div class="services-container-1">
+      <p class="Services-p-tag">
+        Our Services
+      </p>
+      <p class="many-varition-p-tag">
+        There are many variations of passages of lorem ipsum available, but the majority have
+      </p>
+    </div>
+    <div class="services-container-2">
+      <div class="orange-container-div-main">
+        <div class="orange-container-div">
+          <div>
+            <img class="orange-img-black" src="card-item-1 (1).png" alt="">
+          </div>
+          <div>
+            <p class="orange-p">
+              Orange
+            </p>
+          </div>
+          <div>
+            <p class="variations-p-tag">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grapes-container-div-main">
+        <div class="orange-container-div">
+          <div>
+            <img class="orange-img-black" src="card-item-2.png" alt="">
+          </div>
+          <div>
+            <p class="orange-p">
+              Grapes
+            </p>
+          </div>
+          <div>
+            <p class="variations-p-tag">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="gauva-container-div-main">
+        <div class="orange-container-div">
+          <div>
+            <img class="orange-img-black" src="card-item-3.png" alt="">
+          </div>
+          <div>
+            <p class="orange-p">
+              Gauva
+            </p>
+          </div>
+          <div>
+            <p class="variations-p-tag">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-button-readMore">
+        <button class="button-readMore">
+          Read more
+        </button>
+      </div>
+    </div>
+
+      
+    
+  </div>
+
+  <div id="Fruits-2" class="Third-main-div">
+
+
+    <div>
+    <p class="freshFruits-p">
+    Fresh Fruits
+  </p>
+  <p class="many-varition-p-tag">
+    There are many variations of passages of Lorem Ipsum available, but the majority have 
+  </p>
+    </div>
+
+
+    <div class="divOfBestOrange-container">
+      <div class="bestFreshOranges-container">
+        <p class="bestFreshOranges-p">
+          Best Fresh Oranges
+        </p>
+        <p class="majority-have-p">
+          but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
+        </p>
+        <button class="buyNow-button">
+          Buy Now
+        </button>
+      </div>
+      <div class="orange-png-inline-div">
+        <img class="big-orange-img" src="orange.png" alt="">
+      </div>
+    </div>
+
+
+    <div class="divOfBestGrape-container">
+      <div class="bestFreshOranges-container">
+        <p class="bestFreshOranges-p">
+          Best Fresh Grapes
+        </p>
+        <p class="majority-have-p">
+          but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
+        </p>
+        <button class="buyNow-button">
+          Buy Now
+        </button>
+      </div>
+      <div class="orange-png-inline-div">
+        <img class="grapes-png-img" src="grapes.png" alt="">
+      </div>
+    </div>
+
+
+    <div class="divOfBestGauva-container">
+      <div class="bestFreshOranges-container">
+        <p class="bestFreshOranges-p">
+          Best Fresh Gauva
+        </p>
+        <p class="majority-have-p">
+          but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
+        </p>
+        <button class="buyNow-button">
+          Buy Now
+        </button>
+      </div>
+      <div class="orange-png-inline-div">
+        <img class="gauva-png-img" src="gauva.png" alt="">
+      </div>
+    </div>
+  
+
+  </div>
+
+  <div class="Fourth-main-div">
+    <div>
+      <p class="testimonial-p">
+        Testimonial
+      </p>
+      <p class="many-varition-p-tag">
+        There are many variations of passages of Lorem Ipsum available, but the majority have
+      </p>
+    </div>
+    <div class="client-div">
+      <img class="client-img" src="client.png" alt="">
+    </div>
+    <div class="Johnhex-div">
+      <p class="Johnhex-p">
+        Johnhex
+      </p>
+      
+        <p class="Johnhex-paragraph">
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,  
+        </p>
+        <p class="Johnhex-paragraph">
+          or randomised words which don't look even slightly believable. If you are
+        </p>
+        <p class="Johnhex-paragraph">
+          going to use a passage of Lorem Ipsum, you need to be sure
+        </p>
+    
+    </div>
+  </div>
+  
+  <div id="ContactUs-4" class="Fifth-main-div">
+    <div class="contact-div">
+      <form action="">
+        <label class="contact-lable" for="input-f">Contact Us</label>
+        <input id="input-f" class="input-fields" placeholder="Name" type="text">
+        <input class="input-fields" placeholder="Phone Number" type="text">
+        <input class="input-fields" placeholder="Email" type="text">
+        <input class="input-fieldss" placeholder="Message" type="text">
+        <button class="send-button" type="submit">
+          SEND
+        </button>
+      </form>
+    </div>
+    <div class="half-orange-img-div">
+      <img class="half-orange-img" src="orange-dish.png" alt="">
+    </div>
+  </div> 
+
+  <div class="Sixth-main-div">
+    <div class="fruits-list-div">
+      <p class="fruits-p-tag">
+        Fruits
+      </p>
+      <p class="randomised-tag">
+        randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+      </p>
+    </div>
+
+    <div class="fruits-list-div">
+      <p class="fruits-p-tag">
+        Services
+      </p>
+      <p class="randomised-tag">
+        randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+      </p>
+    </div>
+
+    <div class="fruits-list-div">
+      <p class="fruits-p-tag">
+        List
+      </p>
+      <p class="randomised-tag">
+        randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+      </p>
+    </div>
+
+    <div class="follow-us-div">
+      <p class="followUs-p-tag">
+        Follow Us
+      </p>
+      <div class="social-img-div">
+        <div class="fb-img-div">
+          <a href="">
+            <img class="fb-img" src="fb.png" alt="">
+          </a>
+        </div>
+        <div class="github-img-div">
+          <a href="">
+            <img class="github-img" src="25231.png" alt="">
+          </a>
+        </div>
+        <div class="linkedIn-img-div">
+          <a href="">
+            <img class="linkedIn-img" src="linkedin.png" alt="">
+          </a>
+        </div>
+        <div class="insta-img-div">
+          <a href="">
+            <img class="insta-img" src="instagram (1).png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <form action="">
+          <label class="subcribe-lable" for="sub-input">Subcribe Now</label>
+          <input id="sub-input" class="subcribe-input" type="text">
+        </form>
+        <button class="subcribe-button" type="submit">
+          Subscribe
+        </button>
+      </div>
+      
+
+    </div>
+  </div>
+
+  <div class="copyright-div">
+    <p>
+      Copyright &#169; 2024 All Rights Reserved By Dev Hamza Ashfaq
+    </p>
+  </div>
+</body>
+</html>
