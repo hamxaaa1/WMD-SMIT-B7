@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortFolio</title>
+  <style>
+
+* {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #0A192F;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto Mono',sans-serif;
+      margin-bottom: 200px;
+    }
+    .side-navvv {
+      display: none;
+    }
+    .main-1 {
+      display: flex;
+      flex-direction: row;
+      height: 90px;
+      align-items: center;
+    }
+    .div-logo-icon {
+      width: 30%;
+      padding-left: 35px;
+    }
+    .main-1-for-500px {
+      display: none;
+    }
+    .logo-icon {
+      width: 78px;
+    }
+    .div-anchors-tags {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      width: 68%;
+      padding-left: 120px;
+    }
+    .a-header-tags {
+      font-size: 13px;
+      font-weight: bold;
+      margin-right: 40px;
+      text-decoration: none;
+    }
+    .span-1-header {
+      color: #64ffda;
+    }
+    .span-2-header {
+      color: rgb(204, 214, 246);
+    }
+    .span-2-header:hover {
+      color: #64ffda;
+    }
+    .resume-button,
+    .in-touch-button,
+    .show-more-button {
+      padding: 10px 25px;
+      background-color:  #0A192F;
+      border: 1.2px solid #64ffda;
+      color: #64ffda;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .resume-button:hover,
+    .in-touch-button:hover,
+    .show-more-button:hover {
+      background-color: #64ffdb1b;
+    }
+    .in-touch-button {
+      /* word-spacing: 3px; */
+      padding: 18px 27px;
+      font-size: 17px;
+      margin-top: 70px;
+      letter-spacing: 2px;
+    }
+
+
+
+    .main-2 {
+      margin-top: 120px;
+      text-align: center;
+    }
+    .name-tag {
+      margin-top: 6px;
+      color: rgb(223, 229, 248);
+      font-size: 70px;
+      font-weight: bold;
+      margin-bottom: 0;
+      word-spacing: -20px;
+    }
+    .my-name-is-tag {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #64ffda;
+      /* word-spacing: 4.3px; */
+      margin-bottom: 0;
+    }
+
+
+
+    .main-3 {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      row-gap: 30px;
+      column-gap: 20px;
+    }
+    .main-3-child {
+      padding-left: 15px;
+      background-color: rgb(23, 42, 69);
+      width: 25%;
+      padding: 33px 20px;
+    }
+    .main-3-child:hover {
+      margin-bottom: 25px;
+      transition: 0.5s;
+    }
+    .flash-icon {
+      width: 10%;
+      filter: invert(83%) sepia(17%) saturate(1136%) hue-rotate(104deg) brightness(104%) contrast(106%);
+    }
+    .early-p-tag {
+      margin-top: 27px;
+      color: rgb(175, 183, 209);
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    .p-tag-div {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      column-gap: 36%;
+    }
+    .date-p-tag {
+      color: rgb(175, 183, 209);
+      font-size: 12px;
+    }
+    .memories-p-tag {
+      padding-left: 20px;
+      color: #64ffda;
+      font-size: 13px;
+    }
+  
+
+    @media (max-width: 500px) {
+
+
+      .main-1 {
+        display: none;
+      }
+      .main-1-for-500px {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        column-gap: 230px;
+        margin-bottom: 40px;
+      }
+      .side-navvv {
+        display: flex;
+        margin-left: 2%;
+      }
+      .div-logo-icon {
+          width: 30%;
+          padding-left: 0px;
+      }
+      .logo-icon {
+        width: 100px;
+      }
+      .resume-button-divv {
+        text-align: center;
+        margin-top: 58%;
+      }
+      #resume-button-id {
+        padding: 35px 50px;
+        font-size: 16px;
+        margin-left: 28px;
+      }
+      .aa-aa-1 {
+        text-align: center;
+      }
+      .ppyp-tag {
+        text-align: center;
+      }
+      #span-1-main-idd {
+        font-size: 22px;
+      }
+      
+
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+
+      .div-anchors-tags {
+        display: none;
+      }
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #0A192F;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+
+      .main-3 {
+        flex-direction: column;
+      }
+      .main-3-child {
+      /* padding-left: 15px; */
+      background-color: rgb(23, 42, 69);
+      width: 65%;
+      padding: 26px 20px;
+    }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="main-1">
+    <div class="div-logo-icon">
+      <img class="logo-icon" src="Hamza-logo.png" alt="logo">
+    </div>
+    <div class="div-anchors-tags">
+      <a class="a-header-tags" href="/index.html">
+        <p>
+          <span class="span-1-header">01.</span>   <!--   --> <span class="span-2-header">About</span>
+        </p>
+      </a>
+      <a class="a-header-tags" href="/index.html">
+        <p>
+          <span class="span-1-header">02.</span>   <!--   --> <span class="span-2-header">Experience</span>
+        </p>
+      </a>
+      <a class="a-header-tags" href="/index.html">
+        <p>
+          <span class="span-1-header">03.</span>   <!--   --> <span class="span-2-header">Work</span>
+        </p>
+      </a> 
+      <a class="a-header-tags" href="/index.html">
+        <p>
+          <span class="span-1-header">04.</span>   <!--   --> <span class="span-2-header">Contact</span>
+        </p>
+      </a>  
+      <a class="a-header-tags" href="/blog.html">
+        <p>
+          <span class="span-1-header">05.</span>   <!--   --> <span class="span-2-header">Blog</span>
+        </p>
+      </a>
+      <a href="">
+      <button class="resume-button">Resume</button>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="main-1-for-500px">
+    <div class="div-logo-icon">
+      <img class="logo-icon" src="Hamza-logo.png" alt="logo">
+    </div>
+    <div class="side-navvv">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p class="ppyp-tag"> <span id="span-1-main-idd" class="span-1-header">01.</span></p>
+        <a class="aa-aa-1" href="/jbcekn.html"><span class="span-2-header">About</span></a>
+        <p class="ppyp-tag"> <span id="span-1-main-idd" class="span-1-header">02.</span></p>
+        <a class="aa-aa-1" href="#experience"><span class="span-2-header">Experience</span></a>
+        <p class="ppyp-tag"> <span id="span-1-main-idd" class="span-1-header">03.</span></p>
+        <a class="aa-aa-1" href="#workeddd-in"><span class="span-2-header">Work</span></a>
+        <p class="ppyp-tag"> <span id="span-1-main-idd" class="span-1-header">04.</span></p>
+        <a class="aa-aa-1" href="#contact-mee"><span class="span-2-header">Contact</span></a>
+        <p class="ppyp-tag"> <span id="span-1-main-idd" class="span-1-header">05.</span></p>
+        <a class="aa-aa-1" href="blog.html"><span class="span-2-header">Blog</span></a>
+        <div class="resume-button-divv">
+          <button id="resume-button-id" class="resume-button">Resume</button>
+        </div>
+     </div>
+      
+      <span style="font-size:40px;cursor:pointer;color: #64ffda;" onclick="openNav()">&#9776; </span>
+    </div>
+  </div>
+  
+
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
+
+  <div class="main-2">
+    <p class="name-tag">Pensieve</p>
+    <p class="my-name-is-tag">a collection of memories and writeups</p>
+  </div>
+
+
+  <div class="main-3">
+    <div  class="main-3-child">
+      <div class="flash-icon-div">
+        <img class="flash-icon" src="flash-1-icon-193x256-26nznvgr.png" alt="flash">
+      </div>
+      <p class="early-p-tag">
+        Early Life in a Small Village
+      </p>
+      <div class="p-tag-div">
+        <p class="date-p-tag">31/12/17</p>
+        <p class="memories-p-tag">#Memories</p>
+      </div>
+    </div>
+
+    <div  class="main-3-child">
+      <div class="flash-icon-div">
+        <img class="flash-icon" src="flash-1-icon-193x256-26nznvgr.png" alt="flash">
+      </div>
+      <p class="early-p-tag">
+        Year in Review 2018
+      </p>
+      <div class="p-tag-div">
+        <p class="date-p-tag">31/12/18</p>
+        <p class="memories-p-tag">#Memories</p>
+      </div>
+    </div>
+
+    <div  class="main-3-child">
+      <div class="flash-icon-div">
+        <img class="flash-icon" src="flash-1-icon-193x256-26nznvgr.png" alt="flash">
+      </div>
+      <p class="early-p-tag">
+        Year in Review 2019
+      </p>
+      <div class="p-tag-div">
+        <p class="date-p-tag">31/12/19</p>
+        <p class="memories-p-tag">#Memories</p>
+      </div>
+    </div>
+
+    <div  class="main-3-child">
+      <div class="flash-icon-div">
+        <img class="flash-icon" src="flash-1-icon-193x256-26nznvgr.png" alt="flash">
+      </div>
+      <p class="early-p-tag">
+        Year in Review 2020
+      </p>
+      <div class="p-tag-div">
+        <p class="date-p-tag">31/12/20</p>
+        <p class="memories-p-tag">#Memories</p>
+      </div>
+    </div>
+
+    <div  class="main-3-child">
+      <div class="flash-icon-div">
+        <img class="flash-icon" src="flash-1-icon-193x256-26nznvgr.png" alt="flash">
+      </div>
+      <p class="early-p-tag">
+        Year in Review 2021
+      </p>
+      <div class="p-tag-div">
+        <p class="date-p-tag">31/12/21</p>
+        <p class="memories-p-tag">#Memories</p>
+      </div>
+    </div>
+
+    <div  class="main-3-child">
+      <div class="flash-icon-div">
+        <img class="flash-icon" src="flash-1-icon-193x256-26nznvgr.png" alt="flash">
+      </div>
+      <p class="early-p-tag">
+        Year in Review 2022
+      </p>
+      <div class="p-tag-div">
+        <p class="date-p-tag">31/12/22</p>
+        <p class="memories-p-tag">#Memories</p>
+      </div>
+    </div>
+
+    
+  </div>
+
+
+  
+</body>
+</html>

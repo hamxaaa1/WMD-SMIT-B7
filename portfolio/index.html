@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <title>PortFolio</title>
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #0A192F;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto Mono',sans-serif;
+      overflow: wrap;
+      /* margin-bottom: 200px; */
+    }
+    .side-navvv {
+      display: none;
+    }
+    .main-1 {
+      display: flex;
+      flex-direction: row;
+      height: 90px;
+      align-items: center;
+    }
+    .div-logo-icon {
+      width: 30%;
+      padding-left: 35px;
+    }
+    .main-1-for-500px {
+      display: none;
+    }
+    .logo-icon {
+      width: 78px;
+    }
+    .div-anchors-tags {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      width: 68%;
+      padding-left: 120px;
+    }
+    .a-header-tags {
+      font-size: 13px;
+      font-weight: bold;
+      margin-right: 40px;
+      text-decoration: none;
+    }
+    .span-1-header {
+      color: #64ffda;
+    }
+    .span-2-header {
+      color: rgb(204, 214, 246);
+    }
+    .span-2-header:hover {
+      color: #64ffda;
+    }
+    .resume-button,
+    .in-touch-button,
+    .show-more-button {
+      padding: 10px 25px;
+      background-color:  #0A192F;
+      border: 1.2px solid #64ffda;
+      color: #64ffda;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .resume-button:hover,
+    .in-touch-button:hover,
+    .show-more-button:hover {
+      background-color: #64ffdb1b;
+    }
+    .in-touch-button {
+      /* word-spacing: 3px; */
+      padding: 18px 27px;
+      font-size: 17px;
+      margin-top: 70px;
+      letter-spacing: 2px;
+    }
+
+
+
+
+
+
+
+
+
+    .main-2 {
+      margin-left: 145px;
+      
+    }
+    .my-name-is-tag {
+      font-size: 18.5px;
+      color: #64ffda;
+      /* word-spacing: 4.3px; */
+      margin-bottom: 0;
+    }
+    .name-tag {
+      margin-top: 6px;
+      color: rgb(223, 229, 248);
+      font-size: 70px;
+      font-weight: bold;
+      margin-bottom: 0;
+      word-spacing: -20px;
+    }
+    .software-p-tag {
+      margin-top: 7px;
+      color: rgb(175, 183, 209);
+      font-size: 50px;
+      font-weight: bold;
+      word-spacing: -12px;
+      letter-spacing: -3px;
+      margin-bottom: 0;
+
+    }
+    .about-p-tag {
+      margin-top: 23px;
+      font-size: 16px;
+      line-height: 26px;
+      word-spacing: -4px;
+      color: rgb(175, 183, 209);
+      width: 69%;
+      margin-bottom: 0;
+    }
+  
+    
+
+
+
+
+
+
+
+
+
+    .main-3 {
+      margin-top: 90px;
+      margin-left: 145px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 75%;
+
+    }
+    .span-3-about {
+      color: rgb(175, 183, 209);
+      font-weight: bold;
+      font-size: 27px;
+    }
+    .line-div {
+      border-bottom: 1px solid rgba(175, 183, 209, 0.317);
+      width: 32%;
+      margin-right: 18%;
+    }
+
+
+
+
+
+
+
+
+
+
+    .main-4 {
+      margin-left: 145px;
+    }
+    .main-4-first-child {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .main-4-p-tag1,
+    .main-4-p-tag2,
+    .main-4-p-tag3,
+    .main-4-p-tag4,
+    .main-4-p-tag5,
+    .main-4-p-tag6 {
+      font-size: 15px;
+      line-height: 26px;
+      word-spacing: -4px;
+      color: rgb(175, 183, 209)
+    }
+    .main-4-p-tag2 {
+      width: 640px;
+    }
+    .main-4-p-tag3 {
+      width: 645px;
+    }
+    .main-4-p-tag4 {
+      width: 690px;
+    }
+    .main-4-p-tag5 {
+      width: 630px;
+    }
+    .profile-img-div {
+      padding-right: 100px;
+    }
+    .proflie-image {
+      filter: invert(0%) sepia(45%) saturate(130%) hue-rotate(70deg) brightness(82%) contrast(82%);
+      width: 280px;
+      height: 400px;
+      object-fit: cover;
+      outline: solid #64ffdb7f;
+      outline-offset: 14px;
+      transition: 0.3s;
+      margin-right: 15px;
+      
+     }
+     .proflie-image:hover {
+      outline-offset: 10px;
+      filter: none;
+      transition: 0.5s;
+     }
+     .inside-span-a-tags {
+      font-size: 15px;
+      color: #64ffda;
+      text-decoration: none;
+      position: relative;
+      transition: 0.3s;
+     }
+     .inside-span-a-tags::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 0;
+      transition: 0.3s;
+     }
+     .inside-span-a-tags:hover::after {
+      background-color: #64ffda;
+	    width: 100%;
+     }
+     #a-spanny-1{
+      width: 41.9%;
+     }
+     #a-spanny-2 {
+      width: 53%;
+     }
+     #a-spanny-3 {
+      width: 55%;
+     }
+     #a-spanny-4 {
+      width: 57.8%;
+     }
+     #a-spanny-5 {
+      width: 59.4%;
+     } 
+     #a-spanny-6 {
+      width: 61%;
+     }
+     #a-spanny-7 {
+      width: 65%;
+     }
+     
+     .technologies-p-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+     }
+     .technologies-span-p-tags {
+      font-size: 13px;
+      line-height: 12px;
+      word-spacing: 3px;
+      color: rgb(175, 183, 209);
+      margin-right: 50px;
+     }
+     .arrow-span {
+      color: #64ffda;
+     }
+     .main-4-p-tag6 {
+      margin-top: 5px;
+     }
+
+
+
+
+
+
+     .list-div {
+      margin-right: 60px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      width: 130px;
+      margin-left: 145px;
+      line-height: 35px;
+      cursor: pointer;
+      border-left: 1px solid rgba(175, 183, 209, 0.317);
+      /* width: 42%; */
+
+     }
+     .list-div-child {
+      border: none;
+      font-size: 14px;
+      padding-left: 6px;
+      color: #afb7d1;
+      font-weight: bold;
+
+     }
+     .list-div-child:hover {
+      background-color: #232e3d;
+      border-right: none;
+      border-top: none;
+      border-bottom: none;
+      border-left: solid #64ffda;
+     }
+     .list-div-child:active {
+      font-size: 15px;
+      background-color: #151e28;
+      transform: scale(0.96);
+      color: #64ffda;
+      font-weight: bold;
+     }
+
+
+
+
+
+     .main-5 {
+      margin-top: 40px;
+      margin-left: 145px;
+      
+     }
+     .main-5-child {
+      margin-top: 90px;
+      display: flex;
+      flex-direction: row;
+      /* justify-content: space-between; */
+      align-items: center;
+     }
+     .featured-p-tag {
+      font-size: 14px;
+      color: #64ffda;
+      margin-bottom: 0;
+     }
+     .podcast-p-tag {
+      margin-top: 9px;
+      font-weight: bold;
+      font-size: 19px;
+      color: rgb(229, 234, 249);
+      word-spacing: -7px;
+     }
+     .project-transform-p,
+     .Curriculum-p-tag,
+     .Bank-App-p-tag,
+     .crude-mern-p-tag,
+     .class-repo-p-tag {
+      background-color: rgb(23, 42, 69);
+      padding: 23px;
+      color: rgb(175, 183, 209);
+      padding-left: 30px;
+      /* position: absolute; */
+      width: 570px;
+      z-index: 0;
+     }
+     .class-repo-p-tag {
+      width: 470px;
+      text-align: end;
+      word-spacing: -4px;
+     }
+     .crude-mern-p-tag {
+      width: 500px;
+     }
+     .Bank-App-p-tag {
+      width: 590px;
+      word-spacing: -4px;
+     }
+     .html-css3-tag,
+     .Markdown-p-tag,
+     .RactNattive-p-tag {
+      color: rgb(175, 183, 209);
+      font-size: 14px;
+      width: 480px;
+      /* z-index: 100; */
+     }
+     .RactNattive-p-tag {
+      width: 400px;
+     }
+     .Markdown-p-tag {
+      width: auto;
+     }
+     .AIPodcaste-img-div,
+     .java-img-div,
+     .real-estate-img-div {
+      position: relative;
+      bottom: 130px;
+      left: -120px;
+     }
+     .real-estate-img-div {
+        top: -170px;
+        left: -150px;
+     }
+     .AIPodcaste-img,
+     .java-img,
+     .real-estate-img {
+      
+      position: absolute;
+      z-index: -1;
+      width: 470px;
+      height: 250px;
+      margin-right: 3px;
+     }
+     .real-estate-img {
+      width: 540px;
+      height: 360px;
+     }
+  
+     .github-icon,
+     .external-link-icon {
+      margin-top: 5px;
+      margin-bottom: 2px;
+      filter: invert(87%) sepia(5%) saturate(1251%) hue-rotate(192deg) brightness(84%) contrast(95%);
+      width: 23px;
+      cursor: pointer;
+      transition: 0.4s;
+     }
+     .github-icon:hover,
+     .external-link-icon:hover {
+      filter: invert(83%) sepia(17%) saturate(1136%) hue-rotate(104deg) brightness(104%) contrast(106%);
+     }
+     .main-5-second-child {
+      margin-top: 90px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+     }
+     .java-img-div {
+      /* top: -170px; */
+      left: -150px;
+     }
+     .Curriculum-p-tag {
+      width: 470px;
+      text-align: end;
+     }
+     .divi-p {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+     }
+     
+     .other-projects-div-tag {
+      margin-top: 200px;
+      text-align: center;
+     }
+     .other-projects-p-tag {
+      color: rgb(175, 183, 209);
+      font-weight: bold;
+      font-size: 27px;
+     }
+    
+
+
+     .main-6 {
+      margin-left: 125px;
+      margin-right: 125px;
+      row-gap: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+     }
+     .main-6-child-div {
+      width: 320px;
+      height: 400px;
+      background-color: rgb(23, 42, 69);
+      /* width: 320px; */
+      /* margin-left: 40px; */
+      /* border: solid 2px; */
+     }
+     .main-6-child-div:hover {
+      margin-bottom: 25px;
+      transition: 0.5s;
+     }
+     .folder-icon {
+      margin-top: 25px;
+      width: 34px;
+      padding-left: 15px;
+      padding-right: 200px;
+      filter: invert(83%) sepia(17%) saturate(1136%) hue-rotate(104deg) brightness(104%) contrast(106%);
+
+     }
+     .diviiyy-p {
+      margin-left: 20px;
+     }
+     .full-stack-p-tag {
+      color: rgb(175, 183, 209);
+      font-weight: bold;
+      font-size: 20px;
+     }
+     .e-commerce-p-tag {
+      margin-top: 30px;
+      color: rgb(175, 183, 209);
+      font-size: 14px;
+      width: 280px;
+      word-spacing: -5px;
+     }
+     .js-react-p-tag {
+      padding-bottom: 50px;
+      margin-top: 50px;
+      color: rgb(175, 183, 209);
+      font-size: 10px;
+      width: 300px;
+     }
+     .show-more-button-div {
+      margin: auto;
+     }
+     .show-more-button {
+      margin-top: 40px;
+      padding: 18px 25px;
+     }
+     .main-7 {
+      margin-top: 200px;
+      text-align: center;
+     }
+     .get-in-touchy-p {
+      margin-top: 30px;
+      color: rgb(175, 183, 209);
+      font-weight: bold;
+      font-size: 30px;
+     }
+     .next-p-tags {
+      font-size: 15px;
+      color: #64ffda;
+     }
+     .hiii-p-div {
+      margin: auto;
+      width: 58%;
+     }
+
+     .hi-p-tag {
+      margin-top: 30px;
+      word-spacing: -4px;
+      color: rgb(175, 183, 209);
+      font-size: 17px;
+     }
+     .main-8 {
+      display: flex;
+      flex-direction: column;
+      vertical-align: middle;
+      position: relative;
+     }
+     .vertical-line-div,
+     .vertical-line-div-2 {
+      border-left: 3px solid rgba(175, 183, 209, 0.317);
+      margin-left: 11.1px;
+      height: 130px;
+      margin-top: 15px;
+     }
+     .main-8-child {
+      position: fixed;
+      bottom: 0;
+      left: 38px;
+     }
+
+
+
+     .main-9 {
+      display: flex;
+      flex-direction: column;
+      /* vertical-align: middle; */
+      position: relative;
+     }
+     .main-child-9 {
+      position: fixed;
+      bottom: 0;
+      right: 30px;
+     }
+     .email-p {
+      writing-mode: vertical-rl;
+      color: rgb(175, 183, 209);
+      font-size: 12px;
+      cursor: pointer;
+     }
+     .email-p:hover {
+      color: #64ffda;
+      padding-bottom: 4px;
+      transition: 0.4s;
+     }
+     .vertical-line-div-2 {
+      margin-left: 17.7px;
+      height: 100px;
+     }
+     .Maain-div {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: start;
+     }
+     .Maain-div-p-tag-1 {
+      color: rgb(175, 183, 209);
+      font-size: 17px;
+     }
+     .spannnny-span {
+      color: #64ffda;
+     }
+     .Maain-div-p-tag-2 {
+      color: rgb(175, 183, 209);
+      font-size: 12px;
+     }
+     .Maain-div-p-tag-3 {
+      color: rgb(175, 183, 209);
+      font-size: 13.5px;
+     }
+     
+     .Maain-div-p-tag-2,
+     .Maain-div-p-tag-4,
+     .Maain-div-p-tag-5,
+     .Maain-div-p-tag-6 {
+      color: rgb(175, 183, 209);
+      font-size: 13.5px;
+      width: 640px;
+     }
+     .Maain-div-p-tag-2 {
+      font-size: 15px;
+     } 
+     .spann-w {
+      color: rgb(175, 183, 209);
+     }
+
+
+     @media (max-width: 500px) {
+      /* * {
+        margin-left: 0%;
+      } */
+
+      .main-1 {
+        display: none;
+      }
+      .main-1-for-500px {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        column-gap: 230px;
+        margin-bottom: 40px;
+      }
+      .side-navvv {
+        display: flex;
+        margin-left: 2%;
+      }
+      .div-logo-icon {
+          width: 30%;
+          padding-left: 0px;
+      }
+      .logo-icon {
+        width: 100px;
+      }
+      .resume-button-divv {
+        text-align: center;
+        margin-top: 58%;
+      }
+      #resume-button-id {
+        padding: 35px 50px;
+        font-size: 16px;
+        margin-left: 28px;
+      }
+      .aa-aa-1 {
+        text-align: center;
+      }
+      .ppyp-tag {
+        text-align: center;
+      }
+      #span-1-main-idd {
+        font-size: 22px;
+      }
+      
+
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+
+      .div-anchors-tags {
+        display: none;
+      }
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 250px;
+        background-color: #0A192F;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      .main-2 {
+        margin-left: 8%;
+        width: 400px;
+      }
+      .name-tag {
+        font-size: 39px;
+      }
+      .software-p-tag {
+        font-size: 40px;
+        width: 93%;
+      }
+      .about-p-tag {
+        font-size: 15px;
+        line-height: 17px;
+        word-spacing: -4px;
+        width: 80%;
+      }
+      .in-touch-button {
+        word-spacing: -3px;
+        font-size: 13px;
+        margin-top: 30px;
+        padding: 12px 10px;
+      } 
+
+
+      .main-3 {
+        margin-left: 8%;
+        justify-content: left;
+      }
+      .span-1-header {
+        font-size: 15px;
+      }
+      .span-3-about {
+        font-size: 23px;
+        margin-right: 20px;
+      }
+      .line-div {
+        margin-left: 10px;
+        width: 20%;
+      }
+
+
+      .main-4 {
+        margin-left: 9%;
+        /* width: 90%; */
+      }
+      .main-4-first-child {
+        margin-right: 70px;
+        display: flex;
+        flex-direction: column;
+      }
+      .main-4-p-tag1,
+      .main-4-p-tag2,
+      .main-4-p-tag4 {
+        font-size: 15px;
+        margin-right: 0;
+        width: 99%;
+        line-height: 18px;
+      }
+      .main-4-p-tag3,
+      .main-4-p-tag5 {
+        font-size: 15px;
+        margin-right: 0;
+        width: 99%;
+        line-height: 18px;     
+       }
+       .inside-span-a-tags {
+        font-size: 13px;
+       }
+       .profile-img-div {
+        margin-left: 65px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+       }
+       .proflie-image {
+        height: 300px;
+        width: 200px;
+       }
+
+      
+       .main-4-p-tag6 {
+        font-size: 11px;
+        margin-right: 0;
+        width: 63%;
+        line-height: 15px;   
+       }
+       .technologies-p-div {
+        display: block;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 1px;
+       }
+       .technologies-span-p-tags,
+       .arrow-span {
+        font-size: 13px;
+        line-height: 6px;
+       }
+       #experience-id,
+       #workeddd-in {
+        /* font-size: 22px; */
+        width: 500px;
+       }
+       #build-id {
+        font-size: 22.5px;
+        width: 100%;
+      }
+       #line-div-worked {
+        width: 4%;
+       }
+
+
+
+
+
+
+
+
+
+
+       .Maain-div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8%;
+        justify-content: start;
+        align-items: start;
+       }
+       .list-div {
+        margin-left: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid rgba(175, 183, 209, 0.317);
+        border-left: none;
+        width: 70%;
+       }
+       .list-div-child {
+        font-size: 13px;
+        padding-right: 10px;
+       }
+
+       .Maain-div-p-tag-1 {
+        font-size: 14px;
+       }
+       .Maain-div-p-tag-2 {
+        font-size: 13px;
+        word-spacing: -2px;
+       }
+       .Maain-div-p-tag-4,
+       .Maain-div-p-tag-5,
+       .Maain-div-p-tag-6 {
+        word-spacing: -3px;
+        font-size: 13px;
+        width: 45%;
+        margin-bottom: 10px;
+       }
+       .Maain-div-p-tag-6 {
+        margin-bottom: 30px;
+       }
+       .inside-span-a-tags {
+        font-size: 14px;
+       }
+       .spann-w {
+        display: none;
+       }
+       #spunnn {
+        font-size: 12px;
+       }
+       #build-id {
+        font-size: 16.5px;
+        width: 100%;   
+       }
+       #build-div-id {
+        width: 10px;
+       }
+
+
+
+       .main-5 {
+        margin-left: 10%;
+       }
+       .main-5-child {
+        margin-left: 5%;
+       }
+       .AIPodcaste-img-div,
+       .AIPodcaste-img-div-1 {
+        position: relative;
+        bottom: 170px;
+        left: -350px;
+        /* margin-right: 7%; */
+        opacity: 0.2;
+       }
+        .AIPodcaste-img,
+        .java-img {
+          width: 320px;
+          height: 300px;
+          object-fit: cover;
+          object-position: right;
+        }
+        .java-img,
+        .real-estate-img {
+          opacity: 0.5;
+          width: 380px;
+        }
+        .real-estate-img {
+          width: 320px;
+        }
+        .project-transform-p,
+        .Curriculum-p-tag,
+        .Bank-App-p-tag,
+        .crude-mern-p-tag,
+        .class-repo-p-tag {
+          margin-top: -14px;
+          /* background-color: ; */
+          padding-left: 0;
+          width: 70%;
+          margin-bottom: 0px;
+        }
+        .html-css3-tag {
+          margin-top: -6px;
+          width: 80%;
+        }
+        .RactNattive-p-tag {
+          margin-top: -6px;
+          width: 74%;
+        }
+        .divi-p {
+          align-items: center;
+        }
+        .java-img-div,
+        .real-estate-img-div {
+          margin-left: 10%;
+          bottom: 170px;
+          left: -60px;
+        }
+
+
+
+
+        .main-6 {
+          margin-left: 8%;
+        }
+        .main-6-child-div {
+          height: 340px;
+          margin-bottom: 0px;
+        }
+        .full-stack-p-tag {
+          margin-bottom: 0;
+        }
+        .e-commerce-p-tag {
+          margin-top: 10px;
+        }
+        .js-react-p-tag {
+          margin-top: 40px;
+        }
+        
+
+        .main-7 {
+          margin-top: -30px;
+        }
+        .hiii-p-div {
+          width: 90%;
+
+        }
+
+        .main-8 {
+          margin-top: 60px;
+          text-align: center;
+        }
+        .main-8-child {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          column-gap: 20px;
+        }
+        .vertical-line-div {
+          display: none;
+        }
+        .main-8-child {
+          position: static;
+        }
+        .main-9 {
+          display: none;
+        }
+
+     }
+  </style>
+</head>
+<body>
+
+    <div class="main-1">
+      <div class="div-logo-icon">
+        <img class="logo-icon" src="Hamza-logo.png" alt="logo">
+      </div>
+      <div class="div-anchors-tags">
+        <a class="a-header-tags" href="#abouut-me">
+          <p>
+            <span class="span-1-header">01.</span>   <!--   --> <span class="span-2-header">About</span>
+          </p>
+        </a>
+        <a class="a-header-tags" href="#experience-id">
+          <p>
+            <span class="span-1-header">02.</span>   <!--   --> <span class="span-2-header">Experience</span>
+          </p>
+        </a>
+        <a class="a-header-tags" href="#workeddd-in">
+          <p>
+            <span class="span-1-header">03.</span>   <!--   --> <span class="span-2-header">Work</span>
+          </p>
+        </a> 
+        <a class="a-header-tags" href="#contact-mee">
+          <p>
+            <span class="span-1-header">04.</span>   <!--   --> <span class="span-2-header">Contact</span>
+          </p>
+        </a>  
+        <a class="a-header-tags" href="blog.html">
+          <p>
+            <span class="span-1-header">05.</span>   <!--   --> <span class="span-2-header">Blog</span>
+          </p>
+        </a>
+        <a href="">
+        <button class="resume-button">Resume</button>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="main-1-for-500px">
+      <div class="div-logo-icon">
+        <img class="logo-icon" src="Hamza-logo.png" alt="logo">
+      </div>
+      <div class="side-navvv">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <p class="ppyp-tag"> <span id="span-1-main-idd" class="span-1-header">01.</span></p>
+          <a class="aa-aa-1" href="#abouut-me"><span class="span-2-header">About</span></a>
+          <p class="ppyp-tag"> <span id="span-1-main-idd" class="span-1-header">02.</span></p>
+          <a class="aa-aa-1" href="#experience"><span class="span-2-header">Experience</span></a>
+          <p class="ppyp-tag"> <span id="span-1-main-idd" class="span-1-header">03.</span></p>
+          <a class="aa-aa-1" href="#workeddd-in"><span class="span-2-header">Work</span></a>
+          <p class="ppyp-tag"> <span id="span-1-main-idd" class="span-1-header">04.</span></p>
+          <a class="aa-aa-1" href="#contact-mee"><span class="span-2-header">Contact</span></a>
+          <p class="ppyp-tag"> <span id="span-1-main-idd" class="span-1-header">05.</span></p>
+          <a class="aa-aa-1" href="blog.html"><span class="span-2-header">Blog</span></a>
+          <div class="resume-button-divv">
+            <button id="resume-button-id" class="resume-button">Resume</button>
+          </div>
+       </div>
+        
+        <span style="font-size:40px;cursor:pointer;color: #64ffda;" onclick="openNav()">&#9776; </span>
+      </div>
+    </div>
+    
+  
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+
+    <div class="main-2">
+      <p class="my-name-is-tag">Hi, my name is</p>
+      <p class="name-tag">Hamza Ashfaq</p>
+      <p class="software-p-tag">Software Engineer and Trainer</p>
+        <p class="about-p-tag">A Techy's professional journey revolves around crafting large-scale internet web and mobile applications using MERN Stack & React Native. Inspired by technological advancements, currently investing time in Generative AI. A PhD candidate aiming to pursue studies in the United States to advance in the tech field.</p>
+        <a href="">
+      <button class="in-touch-button">Get In Touch</button>
+        </a>
+    </div>
+
+
+    <div id="abouut-me" class="main-3">
+      <div>
+        <p>
+          <span class="span-1-header">01.</span> <!--   --> <span class="span-3-about">About Me</span>
+        </p>
+      </div>
+      <div class="line-div">
+
+      </div>
+    </div>
+
+
+
+    <div class="main-4">
+      <div class="main-4-first-child">
+        <div>
+          <p class="main-4-p-tag1">
+            Hello! I'm Hamza Ashfaq, a full stack software engineer based in Faisalabad, PK
+          </p>
+          <p class="main-4-p-tag2">
+            I specialize in developing robust web and mobile applications using the MERN Stack and React Native. I bring a diverse background, having worked both collaboratively in teams and independently as a freelancer, accumulating valuable experiences along the way.
+          </p>
+          <p class="main-4-p-tag3">
+            As a tech trainer at the <span class="link-span1"><a class="inside-span-a-tags" href="">Saylani Welfare Mass Training & Job Creation Program</a></span> I've taught (wanna see how I provide training to my students? <span class="link-span2"><a class="inside-span-a-tags" href="">click here</a></span> ) over 500 students, simplifying complex programming concepts and solving 250+ LeetCode questions to sharpen my skills. Actively participating in coding competitions like Google Code Jam and Meta Hacker Cup and hackathons drives my passion for continuous learning and innovation.
+          </p>
+          <p class="main-4-p-tag4">
+            I am still undergraduate student at the <span class="link-span3"><a class="inside-span-a-tags" href="">Government College University, Faisalabad</a></span> and will be graduate in June, 2026.
+          </p>
+          <p class="main-4-p-tag5">
+            I aim to pursue a PhD in the United States to advance in technology research and innovation.
+          </p>
+        </div>
+        <div class="profile-img-div">
+          <img class="proflie-image" src="WhatsApp Image 2024-02-24 at 12.26.51 AM.jpeg" alt="Profile">
+        </div>
+      </div>
+
+      <div class="technologies-main-div">
+        <p class="main-4-p-tag6">
+          Here are a few technologies I've been working with recently:
+        </p>
+        <div class="technologies-p-div">
+          <div>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> C</p>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> Dart</p>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> Python</p>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> Typescript</p>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> CSS3</p>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> Chakra-UI</p>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> Bootstrap-5</p>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> React-Native</p>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> FireStore</p>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> Express-JS</p>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> Git</p>
+            <p class="technologies-span-p-tags"><span class="arrow-span">➾</span> Rest-APIs</p>
+          </div>
+          <div>
+            <p class="technologies-span-p-tags"> <span class="arrow-span">➾</span> C++</p>
+            <p class="technologies-span-p-tags"> <span class="arrow-span">➾</span> Java (OOP + DSA)</p>  
+            <p class="technologies-span-p-tags"> <span class="arrow-span">➾</span> JavaScript (ES6+)</p>
+            <p class="technologies-span-p-tags"> <span class="arrow-span">➾</span> HTML5</p> 
+            <p class="technologies-span-p-tags"> <span class="arrow-span">➾</span> SCSS, SASS</p>  
+            <p class="technologies-span-p-tags"> <span class="arrow-span">➾</span> Aunt-Design</p>  
+            <p class="technologies-span-p-tags"> <span class="arrow-span">➾</span> React-JS</p>
+            <p class="technologies-span-p-tags"> <span class="arrow-span">➾</span> Firebase</p>  
+            <p class="technologies-span-p-tags"> <span class="arrow-span">➾</span> Node-JS</p>
+            <p class="technologies-span-p-tags"> <span class="arrow-span">➾</span> Mongo-DB</p> 
+            <p class="technologies-span-p-tags"> <span class="arrow-span" >➾</span> Github</p>  
+            <p class="technologies-span-p-tags"> <span class="arrow-span">➾</span> GraphQL</p>  
+          </div>
+          </div>
+      
+      </div>
+    </div>
+
+
+
+    <div id="experience-id"  class="main-3">
+      <div>
+        <p>
+          <span class="span-1-header">02.</span> <!--   --> <span id="worked-id" class="span-3-about">Where I've Worked</span>
+        </p>
+      </div>
+      <div id="line-div-worked" class="line-div">
+
+      </div>
+    </div>
+
+
+
+    <div class="Maain-div">
+    <div class="list-div">
+      <div class="list-div-child">Smit</div>
+      <div class="list-div-child">ZWTech</div>
+      <div class="list-div-child">SEERAHT</div>
+      <div class="list-div-child">Freelancing</div>
+    </div>
+
+    <div class="Maain-div-child-second">
+      <p class="Maain-div-p-tag-1">Tech Trainer <span class="spannnny-span">@SMIT</span></p>
+      <p class="Maain-div-p-tag-2">Dec 2022 - present</p>
+      <p class="Maain-div-p-tag-3"><span class="arrow-span">➾</span> Instructed 500+ students.</p>
+      <p class="Maain-div-p-tag-4"><span class="arrow-span">➾</span> My role involves delivering comprehensive training sessions on the MERN stack, covering frontend and backend development, database management, and mobile app development using React Native.</p>
+      <p class="Maain-div-p-tag-5"><span class="arrow-span">➾</span> I aim to empower students to become proficient MERN stack developers, providing them with practical knowledge and guidance to build real-world applications using the MERN stack.</p>
+      <p class="Maain-div-p-tag-6"><span class="arrow-span">➾</span> Providing instructions in HTML5, CSS3, SCSS, SASS, Bootstrap 5, JavaScript ES6+, TypeScript, React JS (Context API, Router, State Management), React Native, Redux, Firebase, Firestore, Node JS (ExpressJS, Authentication, API Endpoint Handling), MongoDB, Heroku, Surge, Netlify (Hosting), Git, Github.</p>
+      <p class="Maain-div-p-tag-2">🔄 Course</p>
+      <p id="a-spanny-1" class="inside-span-a-tags"><span class="arrow-span">➾</span> GenAI_Chatbot_1.0  <span class="spann-w">(Current)</span></p>
+      <p id="a-spanny-2" class="inside-span-a-tags"><span class="arrow-span">➾</span> Backend_Development_1.0  <span class="spann-w">(Completed)</span></p> 
+      <p id="a-spanny-3" class="inside-span-a-tags"><span class="arrow-span">➾</span> Full_Stack_Development_1.0  <span class="spann-w">(Current)</span></p>
+      <p id="a-spanny-4" class="inside-span-a-tags"><span class="arrow-span">➾</span> Web_Designing_Bootcamp_1.0   <span class="spann-w">(Completed)</span></p>
+      <p id="a-spanny-5" class="inside-span-a-tags"><span class="arrow-span">➾</span> GWeb_Designing_Bootcamp_2.0   <span class="spann-w">(Completed)</span></p>  
+      <p id="a-spanny-6" class="inside-span-a-tags"><span class="arrow-span">➾</span> Frontend_Web_Development_1.0    <span class="spann-w">(Completed)</span></p> 
+      <p id="a-spanny-7" class="inside-span-a-tags"><span class="arrow-span">➾</span> Frontend_Mobile_Development_1.0    <span class="spann-w">(Completed)</span></p>
+    </div>
+    </div>
+
+
+
+  <div id="workeddd-in" class="main-3">
+    <div>
+      <p>
+        <span id="spunnn" class="span-1-header">03.</span> <!--   --> <span id="build-id" class="span-3-about">Somethings I've built</span>
+      </p>
+    </div>
+    <div id="build-div-id" class="line-div">
+
+    </div>
+  </div>
+
+
+
+  <div class="main-5"> 
+    <div class="main-5-child">
+      <div>
+        <p class="featured-p-tag">
+          Featured Project 
+        </p>
+        <p class="podcast-p-tag">
+          AI Podcast Generator
+        </p>
+        <p class="project-transform-p">
+          This project transforms written content into captivating, lifelike podcasts effortlessly using ElevenLabs API-powered speech synthesis.
+        </p>
+        <p class="html-css3-tag">
+          HTML5 CSS3 Bootstrap5 React-JS Context-API Generative AI, Langchain, Python
+        </p>
+        <img class="github-icon" src="github-outline.svg" alt="">
+        <img class="external-link-icon" src="external-link.svg" alt="">
+        
+    </div>
+    <div class="AIPodcaste-img-div">
+
+      <img class="AIPodcaste-img" src="AIPodcasteGenerator.cf943fff109f713cc4d2.png" alt="AIPodcasteGenerator">
+    
+    </div>
+    </div>
+    
+
+    <div class="main-5-second-child">
+      <div class="java-img-div"> 
+        <img class="java-img" src="JAVADSA.8c9bdb266568538ad724.png" alt="">
+      </div>
+      <div class="divi-p">
+        <p class="featured-p-tag">
+          Featured Project 
+        </p>
+        <p class="podcast-p-tag">
+          JAVA DSA in 4.5 Months   
+         </p>
+        <p class="Curriculum-p-tag">
+          This is the Curriculum to learn Java DSA from scratch to expert. This repository contains all of code samples during my DSA Learning Journey.
+        </p>
+        <p class="Markdown-p-tag">
+          Markdown    
+            </p>
+            <div class="AIPodcaste-img-div-1">
+              <img class="github-icon" src="github-outline.svg" alt="">
+            </div>
+      </div>
+    </div>
+  
+    <div class="main-5-child">
+      <div>
+        <p class="featured-p-tag">
+          Featured Project 
+        </p>
+        <p class="podcast-p-tag">
+          Bank Web App
+        </p>
+        <p class="Bank-App-p-tag">
+          Bank-App is a web application allowing users to manage accounts, perform transactions, and view transaction history conveniently.
+        </p>
+        <p class="html-css3-tag">
+          HTML5 CSS3 Bootstrap5 React-JS Context-API Firebase Firestore
+        </p>
+        <img class="github-icon" src="github-outline.svg" alt="">
+        <img class="external-link-icon" src="external-link.svg" alt="">
+        
+    </div>
+    <div class="AIPodcaste-img-div">
+
+      <img class="AIPodcaste-img" src="BankApp.0bcd60851e9dccf3ad99.png" alt="AIPodcasteGenerator">
+    
+    </div>
+    </div>
+
+
+    <div class="main-5-second-child">
+      <div class="real-estate-img-div"> 
+        <img class="real-estate-img" src="RealEstateMobileApp.a15ba87c3fca2dcc6fab.png" alt="">
+      </div>
+      <div class="divi-p">
+        <p class="featured-p-tag">
+          Featured Project 
+        </p>
+        <p class="podcast-p-tag">
+          Real Estate Mobile App
+         </p>
+        <p class="Curriculum-p-tag">
+          This is the Curriculum to learn Java DSA from scratch to expert. This repository contains all of code samples during my DSA Learning Journey.
+        </p>
+        <p class="Markdown-p-tag">
+           ReactNative Redux NativeBase NodeJS ExpressJS MongoDB cloudinary
+        </p>
+        <img class="github-icon" src="github-outline.svg" alt="">
+      </div>
+    </div>
+
+
+
+    <div class="main-5-child">
+      <div>
+        <p class="featured-p-tag">
+          Featured Project 
+        </p>
+        <p class="podcast-p-tag">
+          CRUD MERN WEB APP
+        </p>
+        <p class="crude-mern-p-tag">
+          CRUD MERN application for streamlined employee management, allowing seamless creation, retrieval, updating, and deletion of employee records.
+        </p>
+        <p class="RactNattive-p-tag">
+          HTML5 CSS3 Bootstrap5 ReactJS NodeJS ExpressJS MongoDB
+        </p>
+        <img class="github-icon" src="github-outline.svg" alt="">        
+    </div>
+    <div class="AIPodcaste-img-div">
+
+      <img class="AIPodcaste-img" src="CRUDMERN.3c8484a5f6779095def5.png" alt="AIPodcasteGenerator">
+    
+    </div>
+    </div>
+
+
+    <div class="main-5-second-child">
+      <div class="real-estate-img-div"> 
+        <img class="real-estate-img" src="RealEstateMobileApp.a15ba87c3fca2dcc6fab.png" alt="">
+      </div>
+      <div class="divi-p">
+        <p class="featured-p-tag">
+          Featured Project 
+        </p>
+        <p class="podcast-p-tag">
+          MERN Stack Bootcamp
+         </p>
+        <p class="class-repo-p-tag">
+          This is the class repository of MERN Stack Development Bootcamp that contains all of code samples and related stuff while i'm instructing.
+        </p>
+        <p class="Markdown-p-tag">
+          Markdown
+        </p>
+        <img class="github-icon" src="github-outline.svg" alt="">
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="other-projects-div-tag">
+    <p class="other-projects-p-tag">
+      Other Projects
+    </p>
+  </div>
+
+  <div class="main-6">
+    <div class="main-6-child-div">
+      <img class="folder-icon" src="folder.svg" alt="folder">
+      <img class="github-icon" src="github-outline.svg" alt="github">
+      <div class="diviiyy-p">
+        <p class="full-stack-p-tag">Full Stack E-Commerce Mobile App Frontend</p>
+        <p class="e-commerce-p-tag">E-commerce mobile app with user registration, product catalog, cart, wishlist, checkout, payment, order tracking, and admin dashboard.</p>
+        <p class="js-react-p-tag">JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS, Mongodb</p>
+      </div>
+    </div>
+
+    <div class="main-6-child-div">
+      <img class="folder-icon" src="folder.svg" alt="folder">
+      <img class="github-icon" src="github-outline.svg" alt="github">
+      <div class="diviiyy-p">
+        <p class="full-stack-p-tag">Full Stack E-Commerce Mobile App Frontend</p>
+        <p class="e-commerce-p-tag">Manages data, handles business logic, and provides APIs for frontend interactions, including user authentication, product management, and search functionality.</p>
+        <p class="js-react-p-tag">Javascript, Node-JS, Express-JS, MongoDB (Aggragation, populate)</p>
+      </div>
+    </div>
+
+    <div class="main-6-child-div">
+      <img class="folder-icon" src="folder.svg" alt="folder">
+      <img class="github-icon" src="github-outline.svg" alt="github">
+      <div class="diviiyy-p">
+        <p class="full-stack-p-tag">TODO List Mobile App</p>
+        <p class="e-commerce-p-tag">Organize tasks, set reminders, and track progress with a user-friendly interface for efficient task management.</p>
+        <p class="js-react-p-tag">React-Native, Redux, Local-Storage</p>
+      </div>
+    </div>
+
+
+    <div class="main-6-child-div">
+      <img class="folder-icon" src="folder.svg" alt="folder">
+      <img class="github-icon" src="github-outline.svg" alt="github">
+      <div class="diviiyy-p">
+        <p class="full-stack-p-tag">CRUD - ReactJS, Firebase</p>
+        <p class="e-commerce-p-tag">Create, Read, Update, and Delete data seamlessly with a dynamic and interactive user interface.p>
+        <p class="js-react-p-tag">HTML, CSS, Bootstrap5, JavaScript, React JS, Firebase, Firestore</p>
+      </div>
+    </div>
+
+    <div class="main-6-child-div">
+      <img class="folder-icon" src="folder.svg" alt="folder">
+      <img class="github-icon" src="github-outline.svg" alt="github">
+      <div class="diviiyy-p">
+        <p class="full-stack-p-tag">React Color Flipper</p>
+        <p class="e-commerce-p-tag">Dynamic color generator inspired by WhatsApp text status. Simple and fun!</p>
+        <p class="js-react-p-tag">HTML, CSS, Bootstrap5, JavaScript, React</p>
+      </div>
+    </div>
+
+    <div class="main-6-child-div">
+      <img class="folder-icon" src="folder.svg" alt="folder">
+      <img class="github-icon" src="github-outline.svg" alt="github">
+      <div class="diviiyy-p">
+        <p class="full-stack-p-tag">Beat the Button: Piano</p>
+        <p class="e-commerce-p-tag">A fun and interactive web-based piano game built using HTML, CSS, and JavaScript, where players strive to beat the buttons in a thrilling musical challenge.</p>
+        <p class="js-react-p-tag">JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS, Mongodb</p>
+      </div>
+    </div>
+
+
+    <div class="show-more-button-div">
+      <button class="show-more-button">
+        Show more
+      </button>
+    </div>
+    
+  </div>
+  
+  <div id="contact-mee" class="main-7">
+    <p class="next-p-tags">04.What's Next?</p>
+    <p class="get-in-touchy-p">Get In Touch</p>
+    <div class="hiii-p-div">
+      <p class="hi-p-tag">I'm currently in a search of new and better opportunities. My inbox is always open. Whether you wanna hire or just say hi, I'll try my best to get back to you!</p>
+    </div>
+    <button class="in-touch-button">
+      Say Hello
+    </button>
+  </div>
+
+
+
+
+  <div class="main-8">
+    <div class="main-8-child">
+      <div>
+        <img class="github-icon" src="github-outline.svg" alt="">
+      </div>
+      <div>
+        <img class="github-icon" src="free-leetcode-3627112-3029520.png" alt="">
+      </div>
+      <div>
+        <img class="github-icon" src="twitter.svg" alt="">
+      </div>
+      <div>
+        <img class="github-icon" src="linkedin-outline.svg" alt="">
+      </div>
+      <div class="vertical-line-div"></div>
+    </div>
+  
+  </div>
+
+
+  <div class="main-9">
+    <div class="main-child-9">
+      <p class="email-p">
+        hamzaashfaq432@gmail.com
+      </p>
+      <div class="vertical-line-div-2">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
