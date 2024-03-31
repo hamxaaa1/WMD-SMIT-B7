@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Bootstrap demo</title>
+
+
+  
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg  bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="image-fluid pt-2" width="90px" src="images/amazon_logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" id="location-a-tag-1" aria-current="page" href="#">
+                <span id="location-span-1">Deliver to</span><br>        
+              </a>
+              <a class="nav-link active" id="location-a-tag-2" arria-current="page" href="#">
+                <i id="location-icon " class="bi bi-geo-alt pe-1"></i><span class="" id="location-span-2">New York 10001</span> 
+              </a>
+            </li>
+
+            
+            <div class="dropdown">
+              <button id="nav-link-dropdown" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                All
+              </button>
+              <li class="nav-item">
+                <form class="d-flex" role="search">
+                  <input id="amazon-search-bar" class="form-control me-2" type="search" placeholder="Search Amazon" aria-label="Search">
+                  <button id="search-button-i" class="btn btn-outline-success" type="submit"><i id="i-search-icon" class="bi bi-search h text-secondary"></i></button>
+                </form>
+              </li>
+              <ul class="dropdown-menu">
+                <li><a id="" class="dropdown-item" href="#">All departments</a></li>
+                <li><a class="dropdown-item" href="#">Alexa Skills</a></li>
+                <li><a class="dropdown-item" href="#">Amazon Clinic</a></li>
+                <li><a class="dropdown-item" href="#">Amazon Devices </a></li>
+                <li><a class="dropdown-item" href="#">Amazon Fresh </a></li>
+                <li><a class="dropdown-item" href="#">Amazon Pharmacy </a></li>
+                <li><a class="dropdown-item" href="#">Amazon Warehouse </a></li>
+                <li><a class="dropdown-item" href="#">Appliances </a></li>
+                <li><a class="dropdown-item" href="#">Apps & Games </a></li>
+                <li><a class="dropdown-item" href="#">Arts, Crafts & Sewing </a></li>
+              </ul>
+            </div>
+
+
+          
+
+            <div class="dropdown">
+              <button id="nav-link-dropdown-3" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="sign-in-span">Hello, sign in</span>  <br>
+              <span class="account-span">Account & Lists</span>               </button>
+              <ul id="dropdown-menu-id-2" class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><b>Your Account</b></a></li>
+                <li><a class="dropdown-item" href="#">Account</a></li>
+                <li><a class="dropdown-item" href="#">Orders</a></li>
+                <li><a class="dropdown-item" href="#">Recommendations</a></li>
+                <li><a class="dropdown-item" href="#">Browsing History</a></li>
+                <li><a class="dropdown-item" href="#">Watchlist</a></li>
+                <li><a class="dropdown-item" href="#">Video Purchasees & Rental</a></li>
+                <li><a class="dropdown-item" href="#">Kindle Unlimited</a></li>
+                <li><a class="dropdown-item" href="#">Content & Devices</a></li>
+                <li><a class="dropdown-item" href="#">Subcribe & Save Items</a></li>
+                <li><a class="dropdown-item" href="#">Memberships & Subcriptions</a></li>
+                
+
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <button id="nav-link-dropdown-2" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <img width="23px" src="images/download (2).png" alt="">  En
+              </button>
+              <ul id="dropdown-menu-id" class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><img width="23px" src="images/download (3).png" alt=""> pk</a></li>
+                <li><a class="dropdown-item" href="#"><img width="23px" src="images/download (4).png" alt=""> German</a></li>
+                <li><a class="dropdown-item" href="#"><img width="23px" src="images/download (5).png" alt=""> Arabic</a></li>
+              </ul>
+            </div>
+
+
+                <li class="nav-item">
+                  <a class="nav-link active" id="returns-orders-a-tag" aria-current="page" href="#">
+                    Reutrns <br>
+                    & Orders
+                  </a>
+                </li>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li id="location-a-tag-a" class="nav-item">
+                      <a  class="nav-link active" aria-current="page" href="#">
+                        <img id="img-cart" width="37px" src="images/307-3071593_accessories-shopping-cart-icon-white.png" alt="">     <span class="" id="location-span-2-1">Cart</span> 
+                      </a>
+                    </li>
+  
+          
+        </div>
+      </div>
+    </nav>
+
+
+    <nav id="navbar-2" class="navbar navbar-expand-lg bg-dark navbar-dark overflow-x-scroll flex-nowrap" style="background-color: rgb(35, 47, 62) !important;">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-6" href="#">All</a>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(35, 47, 62); border: none;">
+            Medical Care
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button  class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(35, 47, 62); border: none;">
+            Groceries
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <a class="navbar-brand fs-6" href="#">Best Sellers</a>
+        <a class="navbar-brand fs-6" href="#">Amazon Basics</a>
+        <div class="dropdown">
+          <button  class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(35, 47, 62); border: none;">
+            Prime
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <a class="navbar-brand fs-6" href="#">New Releases</a>
+        <a class="navbar-brand fs-6" href="#">Customer Service</a>
+        <a class="navbar-brand fs-6" href="#">Music</a>
+        <a class="navbar-brand fs-6" href="#">Todays deal</a>
+        <a class="navbar-brand fs-6" href="#">Registry</a>
+        <a class="navbar-brand fs-6" href="#">Shop women-owned businesses</a>
+
+
+
+
+
+      
+      </div>
+    </nav>
+
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/61Et19tRwyL._SX3000_.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/71-Au+9hsCL._SX3000_.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/71jL5PyF8eL._SX3000_.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/41mSlnMOAJL._SX1500_.jpg" class="d-block w-100" alt="...">
+        </div> 
+       <div class="carousel-item">
+          <img src="images/71bQ5WqgwmL._SX3000_.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/61QzYX+0fKL._SX3000_.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div id="container-1" class="container">
+      <div id="row-1"  class="row ">
+      <div id="coll-1" class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
+        <div class="card" style="width: 15rem;">
+          <img src="images/GW_758x608._SY608_CB580083240_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Editors' pick in Kindle Unlimited</p>
+          </div>
+        </div>
+      </div>
+      <div id="coll-2" class="col-lg-3 col-md-4 col-sm-3 col-xs-3"  style="padding-left: 20px;">
+        <div class="card" style="width: 15rem;">
+          <img src="images/AREA_T2_d_singleimage_2X._SY608_CB582181024_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Shop Pre-Loved on Shopbop Shop Pre-Loved</p>
+          </div>
+        </div>
+      </div>
+      <div id="coll-3" class="col-lg-3 col-md-3 col-sm-1 "  style="padding-left: 30px;">
+        <div class="card" style="width: 15rem;" >
+          <img src="images/24-0009-USNJACQ-BAU-Gateways-Feb2024_Desktop_Category_Card_Lifestyle_BAU_2x_758x608_V01._SY608_CB585928438_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Find well-being on Audible Shop on Shopbop</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-2"  style="padding-left: 40px;">
+        <div class="card d-none d-lg-block" style="width: 15rem;">
+          <img src="images/758x608_Loved01_Desktop_Card-min._SY608_CB583055875_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Discover Lovedº1 by John Legend</p>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+
+
+
+      
+        
+    </div>
+  
+
+    <div id="container-2" class="container-fluid">
+      <div class="row" style="margin-left: 40px; column-gap: 90px; row-gap: 30px;">
+        <div  class="col-md-2 col-sm-5">
+          <div id="images-card-1" class="card" style="width: 16rem;">
+            <img src="images/XCM_CUTTLE_1532326_2854429_758x608_2X_en_US._SY608_CB617389165_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kids winter gift guide</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-5 col-md-2">
+          <div id="images-card-2" class="card" style="width: 16rem;">
+            <img src="images/XCM_CUTTLE_1693177_3621186_379x304_1X_en_US._SY608_CB583001568_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Get deals on tech</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-5 col-md-2 ">
+          <div id="images-card-3" class="card" style="width: 16rem;">
+            <img src="images/XCM_CUTTLE_1695143_3632688_758x608_2X_en_US._SY608_CB581588312_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Explore gift cards for 20+ occasions</h5>
+              <p class="card-text">Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-5">
+          <div id="images-card-4" class="card" style="width: 16rem;">
+            <img src="images/mp_20231114_prelovededit_category_desktop_758x608._SY608_CB571219548_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Car maintenance for you.</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <h4 class="card-title container-fluid" style="margin-bottom: 10px; margin-top: 50px;">Trending Deals.</h4>
+    <div class="container-fluid" style="background-color: rgb(241, 241, 241); ">
+        <div id="scrolllbar" class="overflow-x-scroll d-flex" style="column-gap: 30px; margin-bottom: 200px;">
+          <div>
+            <img src="images/41WsUE714TL._SY500__AC_SY400_.jpg" alt="slide-1" width="200px">
+            <h6 class="card-title">Car maintenance for you.</h6>
+            </div>
+            <div>
+            <img src="images/31XOJkwKDLL._SY500__AC_SY400_.jpg" alt="slide-2" width="160px"> 
+            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h6>
+            </div>
+
+            <div>
+              <img src="images/41Du1qp6MAL._SY500__AC_SY400_.jpg" alt="slide-3" width="170px">
+            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+              </div>
+    
+              <div>
+              <img src="images/41D7oFSoWJL._SY500__AC_SY400_.jpg" alt="slide-4" width="206px">  
+            <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+              </div>
+  
+              <div>
+                <img src="images/41KE0WMBHcL._SY500__AC_SY400_.jpg" alt="slide-5" width="205px">
+            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                </div>
+      
+                <div>
+                <img src="images/41429AA8WKL._SY500__AC_SY400_.jpg" alt="slide-6" width="250px" height="205px">  
+            <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                </div>
+  
+                <div>
+                  <img src="images/315D+N5ksyL._SY500__AC_SY400_.jpg" alt="slide-7" width="160px">
+            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                </div>
+        
+                <div>
+                  <img src="images/XCM_CUTTLE_1532326_2854429_758x608_2X_en_US._SY608_CB617389165_.jpg" alt="slide-8" width="250px">  
+            <h6 class="card-title">Lorem ipsum amet consectetur.</h6>
+                </div>
+  
+                <div>
+                  <img src="images/51bh5BogjWL._SY500__AC_SY400_.jpg" alt="slide-9" width="190px">
+            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                  </div>
+          
+                
+  
+                  <div>
+                  <img src="images/41-qigacQqL._SY500__AC_SY400_.jpg" alt="slide-10" width="190px">
+            <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                  </div>
+            
+                  <div>
+                  <img src="images/31pdZPYdm+L._SY500__AC_SY400_.jpg" alt="slide-11" width="250px" height="190px">  
+            <h6 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+                  </div>
+  
+                  <div>
+                  <img src="images/mp_20231114_prelovededit_category_desktop_758x608._SY608_CB571219548_.jpg" alt="slide-12" width="240px">
+            <h6 class="card-title">Lo amet consectetur adipisicing elit.</h6>
+
+                  </div>
+              
+                  <div>
+                  <img src="images/416hEoDezxL._SY500__AC_SY400_.jpg" alt="slide-13" width="220px"> 
+            <h6 class="card-title">consectetur adipisicing elit.</h6>
+                  </div>
+
+                  <div>
+                  <img src="images/31BRSx3NIpL._SY500__AC_SY400_.jpg" alt="slide-14" width="250px" height="190px">  
+            <h6 class="card-title">Lo amet adipisicing elit.</h6>
+                  </div>
+                  <div>
+                  <img src="images/51lXniXWazL._SY500__AC_SY400_.jpg" alt="slide-15" width="150px" height="190px">  
+            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                 </div>
+                 <div>
+                 <img src="images/216CsPhZ5JL._SY500__AC_SY400_.jpg" alt="slide-16" width="130px" height="180px">  
+            <h6 class="card-title">Ljodr jdy adipisicing elit.</h6>
+                 </div>
+                 <div>
+                 <img src="images/41xRqA+mowL._SY500__AC_SY400_.jpg" alt="slide-17" width="180px">  
+            <h6 class="card-title">jduis ksi in ipisicing elit.</h6>
+                </div>
+                <div>
+                <img src="images/316vaIlLPOL._SY500__AC_SY400_.jpg" alt="slide-18" width="160px">  
+            <h6 class="card-title">kdhdivn hdiwo adipisicing elkidn.</h6>
+                </div>
+                <div>
+                <img src="images/41Zoyte3bhL._SY500__AC_SY400_.jpg" alt="slide-19" width="170px">  
+            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                </div>
+              
+        </div>
+      </div>
+    
+
+
+      <div id="container-2" class="container-fluid">
+        <div class="row" style="margin-left: 40px; column-gap: 90px; row-gap: 30px;">
+          <div  class="col-md-2 col-sm-5">
+            <div id="images-card-1" class="card" style="width: 16rem;">
+              <img src="images/Cat_Card_Homepage_Desktop_758x608_ALT_2x1._SY608_CB582717703_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Car maintenance, for less</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit jiko.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-sm-5 col-md-2">
+            <div id="images-card-2" class="card" style="width: 16rem;">
+              <img src="images/XCM_CUTTLE_1547020_2941332_758x608_2X_en_US._SY608_CB594693536_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Shop Easter essentials</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing onsectetur adipisi.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-sm-5 col-md-2 ">
+            <div id="images-card-3" class="card" style="width: 16rem;">
+              <img src="images/GW_758x608_2x_prod._SY608_CB582534734_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Made in Italy</h5>
+                <p class="card-text">Lorem ipsum dolor sit Lorem ipsum dolor sit amet kikol nnoh.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-2 col-sm-5">
+            <div id="images-card-4" class="card" style="width: 16rem;">
+              <img src="images/XCM_CUTTLE_1696047_3637742_758x608_2X_en_US_V1._SY608_CB580068229_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Spring household essentials</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet ipsum dolor sit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <h4 class="card-title container-fluid" style="margin-bottom: 10px; margin-top: 50px;">Best Sellers in Toys & Games.</h4>
+      <div class="container-fluid" style="background-color: rgb(241, 241, 241); ">
+          <div id="scrolllbar" class="overflow-x-scroll d-flex" style="column-gap: 30px; margin-bottom: 70px;">
+            <div>
+              <img src="images/71OHTuBoL+L._AC_SY400_.jpg" alt="slide-1" width="200px">
+              <h6 class="card-title">Car maintenance for you.</h6>
+              </div>
+              <div>
+              <img src="images/71oh+KqlsQL._AC_SY400_.jpg" alt="slide-2" width="169px"> 
+              <h6 class="card-title">Lorem ipsum dolor sit amet consectetug.</h6>
+              </div>
+  
+              <div>
+                <img src="images/81fmkv7E38L._AC_SY400_.jpg" alt="slide-3" width="165px">
+              <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                </div>
+      
+                <div>
+                <img src="images/81vLnk3ZB3L._AC_SY400_.jpg" alt="slide-4" width="206px">  
+              <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                </div>
+    
+                <div>
+                  <img src="images/71k45i-sZzL._AC_SY400_.jpg" alt="slide-5" width="185px">
+              <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                  </div>
+        
+                  <div>
+                  <img src="images/71iXw2hr9aL._AC_SY400_.jpg" alt="slide-6" width="200px" height="175px">  
+              <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                  </div>
+    
+                  <div>
+                    <img src="images/81EQHcOo6uL._AC_SY400_.jpg" alt="slide-7" width="170px">
+              <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                  </div>
+          
+                  <div>
+                    <img src="images/71ig45gU-uL._AC_SY400_.jpg" alt="slide-8" width="180px">  
+              <h6 class="card-title">Lorem ipsum amet consectetur.</h6>
+                  </div>
+    
+                  <div>
+                    <img src="images/71WT7ECExXL._AC_SY400_.jpg" alt="slide-9" width="180px">
+              <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                    </div>
+            
+                  
+    
+                    <div>
+                    <img src="images/81bPXl+xCKL._AC_SY400_.jpg" alt="slide-10" width="190px">
+              <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                    </div>
+              
+                    <div>
+                    <img src="images/71kQtzvJRnL._AC_SY400_.jpg" alt="slide-11" width="250px" height="190px">  
+              <h6 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+                    </div>
+    
+                    <div>
+                    <img src="images/81cI9lMqIoL._AC_SY400_.jpg" alt="slide-12" width="180px">
+              <h6 class="card-title">Lo amet consectetur adipisicing elit.</h6>
+  
+                    </div>
+                
+                    <div>
+                    <img src="images/71bjjH7anTL._AC_SY400_.jpg" alt="slide-13" width="220px"> 
+              <h6 class="card-title">consectetur adipisicing elit.</h6>
+                    </div>
+  
+                  
+                   
+                
+                
+          </div>
+        </div>
+
+
+
+        <h4 class="card-title container-fluid" style="margin-bottom: 10px; margin-top: 0px;">Best Sellers in Books</h4>
+        <div class="container-fluid" style="background-color: rgb(241, 241, 241); ">
+            <div id="scrolllbar" class="overflow-x-scroll d-flex" style="column-gap: 30px; margin-bottom: 200px;">
+              <div>
+                <img src="images/913C+MR3S5L._AC_SY400_.jpg" alt="slide-1" width="110px">
+                <h6 class="card-title">Car maintenance.</h6>
+                </div>
+                <div>
+                <img src="images/91q6YJUqiAL._AC_SY400_.jpg" alt="slide-2" width="112px"> 
+                <h6 class="card-title">Lorem ipsum dolor sit. </h6>
+                </div>
+    
+                <div>
+                  <img src="images/810bsxh1MmL._AC_SY200_.jpg" alt="slide-3" width="165px">
+                <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                  </div>
+        
+                  <div>
+                  <img src="images/71ihGxMQEBL._AC_SY400_.jpg" alt="slide-4" width="126px">  
+                <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                  </div>
+      
+                  <div>
+                    <img src="images/81qFXvsZ2sL._AC_SY400_.jpg" alt="slide-5" width="165px">
+                <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                    </div>
+          
+                    <div>
+                    <img src="images/71+C1jJatUL._AC_SY400_.jpg" alt="slide-6" width="200px" height="175px">  
+                <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                    </div>
+      
+                    <div>
+                      <img src="images/71Yys-zBTnL._AC_SY400_.jpg" alt="slide-7" width="120px">
+                <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                    </div>
+            
+                    <div>
+                      <img src="images/81YkqyaFVEL._AC_SY400_.jpg" alt="slide-8" width="120px">  
+                <h6 class="card-title">Lorem ipsum amet.</h6>
+                    </div>
+      
+                    <div>
+                      <img src="images/81TmnPZWb0L._AC_SY400_.jpg" alt="slide-9" width="120px">
+                <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                      </div>
+              
+                    
+      
+                      <div>
+                      <img src="images/81RrEEMiOCL._AC_SY400_.jpg" alt="slide-10" width="120px">
+                <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                      </div>
+                
+                      <div>
+                      <img src="images/91n7p-j5aqL._AC_SY400_.jpg" alt="slide-11" width="200px" height="180px">  
+                <h6 class="card-title">Lorem ipsum dolor sit, amet.</h6>
+                      </div>
+      
+                      <div>
+                      <img src="images/81uv7QtqJ0L._AC_SY400_.jpg" alt="slide-12" width="180px">
+                <h6 class="card-title">Lo amet consectetur adipisicing elit.</h6>
+    
+                      </div>
+                  
+                      <div>
+                      <img src="images/917Bc9C1MlL._AC_SY400_.jpg" alt="slide-13" width="110px"> 
+                <h6 class="card-title">consectetur adipisicing elit.</h6>
+                      </div>
+    
+                    
+                     
+                  
+                  
+            </div>
+          </div>
+  
+
+          <div id="container-2" class="container-fluid" style="margin-bottom: 1 00px;">
+            <div class="row" style="margin-left: 40px; column-gap: 90px; row-gap: 30px;">
+              <div  class="col-md-2 col-sm-5">
+                <div id="images-card-1" class="card" style="width: 16rem;">
+                  <img src="images/XCM_CUTTLE_1694406_3626905_758x608_2X_en_US._SY608_CB581351123_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Car maintenance, for less</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit jiko.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-sm-5 col-md-2">
+                <div id="images-card-2" class="card" style="width: 16rem;">
+                  <img src="images/XCM_CUTTLE_1545587_2933821_758x608_2X_en_US._SY608_CB613351022_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Shop Easter essentials</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing onsectetur adipisi.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-sm-5 col-md-2 ">
+                <div id="images-card-3" class="card" style="width: 16rem;">
+                  <img src="images/XCM_CUTTLE_1463327_2548414_758x608_2X_en_US._SY608_CB612313793_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Made in Italy</h5>
+                    <p class="card-text">Lorem ipsum dolor sit Lorem ipsum dolor sit amet kikol nnoh.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-md-2 col-sm-5">
+                <div id="images-card-4" class="card" style="width: 16rem;">
+                  <img src="images/XCM_CUTTLE_1696047_3637742_758x608_2X_en_US_V1._SY608_CB580068229_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Spring household essentials</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet ipsum dolor sit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <div class="conatiner">
+            <div class="">
+              <div class="col-12 text-center">
+                <p class="card-text">See personalized recommendations</p>
+                <button style="background-color: #edb423; padding: 3px 100px; font-size: 14px;" type="button" class="btn btn-warning">Sign in</button> 
+                 <p style="font-size: 13px;" class="card-text">New Customer? <a style="color: #007185;" href="">Start here.</a></p>
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+
+
+          <div id="contanier-hoveer" class="container-fluid" style="margin-top: 40px; background-color: #485769; color: white; font-size: 15px; padding: 13px; cursor: pointer;" >
+            <div class="row">
+              <div id="back-to-top-id" class="col-12 text-center">
+                <a>
+                  Back to top
+                </a>
+              </div>
+
+
+
+              
+
+
+            </div>
+          </div>
+
+
+          <div class="container-fluid" style="background-color: #232F3E;">
+            <div id="footer-row" class="row  justify-content-evenly" style="row-gap: 30px; padding-top: 40px;">
+              <div class="col-md-2 col-sm-4">
+                <p>Get to Know Us</p>
+                <a href="">Careers</a> <br>
+                <a href="">Amazon <br> Newsletter</a> <br>
+                <a href="">About Amazon</a> <br>
+                <a href="">Accessibility</a> <br>
+                <a href="">Sustainability</a> <br>
+                <a href="">Press Center</a> <br>
+                <a href="">Investor Relations</a> <br>
+                <a href="">Amazon Devices</a> <br>
+                <a href="">Amazon Science</a> <br>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <p>Make Money with Us</p>
+                <a href="">Sell on Amazon</a> <br>
+                <a href="">Sell apps on Amazon</a> <br>
+                <a href="">Supply to Amazon</a> <br>
+                <a href="">Protect & Build Your <br> Brand</a> <br>
+                <a href="">Become an Affiliate</a> <br>
+                <a href="">Become a Delivery Driver</a> <br>
+                <a href="">Start a Package Delivery <br> Business</a> <br>
+                <a href="">Advertise Your Products</a> <br>
+                <a href="">Self-Publish with Us</a> <br>
+                <a href="">Host an Amazon Hub</a> <br>
+                <a href="">› See More Ways to Make<br>Money</a> <br>
+          
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <p>Amazon Payment Products</p>
+                <a href="">Amazon Visa</a> <br>
+                <a href="">Amazon Store Card</a> <br>
+                <a href="">Amazon Secured Card</a> <br>
+                <a href="">Amazon Business Card</a> <br>
+                <a href="">Shop with Points</a> <br>
+                <a href="">Credit Card Marketplace</a> <br>
+                <a href="">Reload Your Balance</a> <br>
+                <a href="">Gift Cards</a> <br>
+                <a href="">Amazon Currency Converter</a> <br>
+
+
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <p>Let Us Help You</p>
+                <a href="">Your Account</a> <br>
+                <a href="">Your Orders</a> <br>
+                <a href="">Shipping Rates & <br> Policies</a> <br>
+                <a href="">Amazon Prime</a> <br>
+                <a href="">Returns & <br> Replacements</a> <br>
+                <a href="">Manage Your <br> Content and Devices</a> <br>
+                <a href="">Recalls and Product <br> Safety Alerts</a> <br>
+                <a href="">Help</a>
+              </div>
+            </div>
+
+
+            <hr style="color: white; margin-bottom: 30px;">
+            <div id="footer-row-1" class="row justify-content-center" style="padding-bottom: 17px;">
+              <div id="amazon_logo-id-1" class="col-md-2 col-sm-3">
+                <img width="100px" src="images/amazon_logo.png" alt="">
+              </div>
+              <div class="col-md-2 col-sm-3 ">
+                <button type="button" class="btn btn-outline-light"><i class="bi bi-globe2"></i> English</button>
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <button type="button" class="btn btn-outline-light"><img width="25px" src="images/download (2).png" alt=""> United States</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="container-fluid" style="background-color: #131A22;">
+            <div class="container" style="padding-top: 40px;" >
+              <div id="footer-row-2" class="row justify-content-evenly" style="line-height: 18px; row-gap: 50px;">
+                <div class="col-md-2 col-sm-3"  > 
+                  <a href="" style="gap: 33px; margin-bottom: 20px;"><span>Amazon Music</span> <br> Stream <br> millions <br> of songs</a> <br> <br> 
+                  <a href=""><span>Amazon Fresh</span> <br> Groceries & <br> More <br> Right To Your <br> Door</a> <br> <br>
+                  <a href=""><span>IMDB</span> <br> Movies, TV <br> & Celebrities</a> <br> <br>
+                  <a href=""><span>Whole Foods <br> Market</span> <br> America’s <br> Healthies <br> Grocery Store	</a> <br>
+            
+                </div>
+                <div class="col-md-2 col-sm-3">
+                  <a href=""><span>Amazon Ads</span> <br> Reach customers <br> wherever they <br> spend their time</a> <br> <br>
+                  <a href=""><span>AmazonGlobal</span> <br> Ship Orders <br> Internationally</a> <br> <br> <br>
+                  <a href=""><span>IMDbPro</span> <br> Get Info <br> Entertainment <br> Professionals <br> Need</a> <br> <br>
+                  <a href=""><span>Woot!</span> <br> Deals and <br> Shenanigans</a> <br>
+  
+                </div>
+                <div class="col-md-2 col-sm-3">
+                  <a href=""><span>6pm</span><br> Score deals <br> on fashion brands</a> <br> <br>
+                  <a href=""><span>Home Services</span> <br> Experienced Pros <br> Happiness Guarantee</a> <br> <br>
+                  <a href=""><span>Kindle Direct Publishing</span> <br> Indie Digital & Print <br> Publishing <br> Made Easy</a> <br> <br>
+                  <a href=""><span>Zappos</span> <br> Shoes & <br> Clothing</a> <br> <br>
+                  <a href=""><span>Amazon Subscription <br> Boxes</span> Top subscription boxes <br> – right to your door</a> <br>
+  
+                  
+                </div>
+                <div class="col-md-2 col-sm-3">
+                  <a href=""><span>AbeBooks</span> <br> Books, art <br> & collectibles</a> <br> <br>
+                  <a href=""><span>Amazon Web <br> Services</span> <br> Scalable Cloud <br> Computing <br> Services</a> <br> <br>
+                  <a href=""><span>Amazon Photos</span> <br> Unlimited Photo <br> Storage <br> Free With Prime	</a> <br> <br>
+                  <a href=""><span>Ring</span> <br> Smart Home <br> Security <br> Systems</a> <br> <br>
+                  <a href=""><span>PillPack</span> <br> Pharmacy <br> Simplified</a> <br> <br>
+  
+                </div>
+                <div class="col-md-2 col-sm-3">
+                  <a href=""><span>ACX <br></span> Audiobook <br> Publishing <br> Made Easy</a> <br> <br>
+                  <a href=""><span>Audible <br></span> Listen to Books & <br> Original <br> Audio <br> Performances</a> <br> <br>
+                  <a href=""><span>Prime Video Direct</span> <br> Video Distribution <br> Made Easy</a> <br> <br>
+                  <a href=""><span>eero WiFi</span> <br> Stream 4K Video <br> in Every Room</a> <br> <br>
+                  <a href=""><span>Amazon Renewed</span> <br> Like-new products <br> you can trust</a> <br> 
+  
+                </div>
+                <div class="col-md-1 col-sm-3">
+                  <a href=""><span>Sell on Amazon</span> Start a Selling Account</a> <br> <br>
+                  <a href=""><span>Box Office Mojo</span> Find Movie Box Office Data</a> <br> <br>
+                  <a href=""><span>Shopbop</span> Designer Fashion Brands</a> <br> <br>
+                  <a href=""><span>Blink</span> Smart Security for Every Home</a> <br>
+  
+                </div>
+                <div class="col-md-1 col-sm-3">
+                  <a href=""><span>Amazon Business</span> Everything For Your Business</a> <br> <br>
+                  <a href=""><span>Goodreads</span> Book reviews & recommendations</a> <br> <br>
+                  <a href=""><span>Amazon Warehouse</span> Great Deals on Quality Used Products</a> <br> <br>
+                  <a href=""><span>Neighbors App</span> Real-Time Crime & Safety Alerts</a> <br>
+  
+                </div>
+              </div>
+
+
+              <div id="row-footer-end" class="row justify-content-center" style="margin-top: 40px;">
+                <div class="col-12 text-center" >
+                  <a class="a-1-tag" href="" style="margin-right: 35px;">Conditions of Use</a>
+                  <a class="a-3-tag" href="" style="margin-right: 30px;">Privacy Notice </a>
+                  <a class="a-3-tag" href="">Your Ads Privacy Choices  </a>
+                  <img src="images/TickCross.png" alt="">
+
+                </div>
+              
+              </div>
+
+              <div  class="col-12 text-center" style="margin-top: 16px; padding-bottom: 20px;">
+                <a style="text-decoration: none; color: #999999; font-size: 14px;" href="">Copyright © 2024 All Rights Reserved By Dev Hamza Ashfaq(217488)</a>
+              </div>
+            </div>
+          </div>
+          
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+
+  </body>
+</html>
