@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    let physics = Number(prompt("Enter Your Physics Marks out of 100",50));
+    let chemistry = Number(prompt("Enter Your Chemistry Marks out of 100",60));
+    let biology = Number(prompt("Enter Your Biology Marks out of 100",70));
+    let mathematics = Number(prompt("Enter Your Mathematics Marks out of 100",80));
+    let computer =Number(prompt("Enter Your Computer Marks out of 100",90));
+    let addTotalMarks = physics + chemistry + biology + mathematics + computer;
+    let percentage = ((physics + chemistry + biology + mathematics + computer) * 100) / 500;
+
+    if (percentage >= 90) {
+
+      alert(`Total Marks: 500
+      \nObtained Marks: ${addTotalMarks}
+      \nYour Percentage is ${percentage}%
+      \nGrade A`);
+      
+    } else if (percentage >= 80) {
+
+      alert(`Total Marks: 500
+      \nObtained Marks: ${addTotalMarks}
+      \nYour Percentage is ${percentage}%
+      \nGrade B`);
+
+    } else if (percentage >= 70) {
+
+      alert(`Total Marks: 500
+      \nObtained Marks: ${addTotalMarks}
+      \nYour Percentage is ${percentage}%
+      \nGrade C`);
+
+    } else if (percentage >= 60) {
+
+      alert(`Total Marks: 500
+      \nObtained Marks: ${addTotalMarks}
+      \nYour Percentage is ${percentage}%
+      \nGrade D`);
+
+    } else if (percentage >= 40) {
+
+      alert(`Total Marks: 500
+      \nObtained Marks: ${addTotalMarks}
+      \nYour Percentage is ${percentage}%
+      \nGrade E`);
+
+    } else if (percentage >= 0 && percentage < 40) {
+  
+      alert(`Total Marks: 500
+      \nObtained Marks: ${addTotalMarks}
+      \nYour Percentage is ${percentage}%
+      \nGrade F`);
+
+    } else {
+
+      alert("Wrong Input");
+      
+    }
+    
+
+
+    
+  </script>
+</body>
+</html>

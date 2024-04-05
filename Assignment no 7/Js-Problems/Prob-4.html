@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let number = prompt("Enter Your Number",70);
+
+    if (number %5 == 0 && number %11 == 0) {
+      alert(`${number} is divisible by 5 and 11`);
+    } else if ( number %5 == 0 ) {
+      alert(`${number} is divisible by 5 but not 11`);
+    } else if ( number %11 == 0 ) {
+      alert(`${number} is divisible by 11 but not 5`);
+    } else {
+      alert(`${number} is not divisible by 5 or 11 `);
+    }
+  </script>
+</body>
+</html>

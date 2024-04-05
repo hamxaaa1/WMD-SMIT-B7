@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let salary = Number(prompt("Enter Your Salary",7000));
+
+    let HRA_1 = Math.round((20*salary) / 100)
+    let DA_1 = Math.round((80*salary) / 100)
+
+    let HRA_2 = Math.round((25*salary) / 100)
+    let DA_2 = Math.round((90*salary) / 100)
+
+    let HRA_3 = Math.round((30*salary) / 100)
+    let DA_3 = Math.round((95*salary) / 100)
+
+    if (salary >= 0 && salary <= 10000 ) {
+
+      alert(`Basic Salary: ${salary}
+      \nHouse Rent Allowance (HRA): ${HRA_1}
+      \nDearness Allowance (DA): ${DA_1}
+      \nGross Salary: ${salary+HRA_1+DA_1}`);
+
+    } else if (salary > 10000 && salary <= 20000) {
+
+      alert(`Basic Salary: ${salary}
+      \nHouse Rent Allowance (HRA): ${HRA_2}
+      \nDearness Allowance (DA): ${DA_2}
+      \nGross Salary: ${salary+HRA_2+DA_2}`);
+      
+    } else if (salary > 20000) {
+
+      alert(`Basic Salary: ${salary}
+      \nHouse Rent Allowance (HRA): ${HRA_3}
+      \nDearness Allowance (DA): ${DA_3}
+      \nGross Salary: ${salary+HRA_3+DA_3}`);
+    
+    } else {
+      alert(`Enter Correct Salary`);
+    }
+
+
+
+
+  
+  </script>
+</body>
+</html>

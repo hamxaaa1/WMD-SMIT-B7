@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let totalBill = Number(prompt("Enter Your Units",70));
+
+    // formula:
+    // Bill amount = Unit Price x Usage Units
+
+    if (totalBill >= 0 && totalBill <= 50) {
+
+      alert(`Bill: Rs. ${Math.round(0.50*totalBill)}
+      \nAn additional surcharge of 20% is: Rs. ${Math.round((20*(Math.round(0.50*totalBill)))/100)}
+      \nTotal Bill: ${Math.round(0.50*totalBill) + Math.round((20*(Math.round(0.50*totalBill)))/100)}`);
+    
+    } else if (totalBill > 50 && totalBill <= 150) { 
+
+      alert(`Total Bill: Rs. ${Math.round(0.75*totalBill)}
+      \nAn additional surcharge of 20% is: Rs. ${Math.round((20*(Math.round(0.75*totalBill)))/100)}
+      \nTotal Bill: ${Math.round(0.75*totalBill) + Math.round((20*(Math.round(0.75*totalBill)))/100)}`);
+
+    } else if (totalBill > 150 && totalBill <= 250) {
+
+      alert(`Total Bill: Rs. ${Math.round(1.20*totalBill)}
+      \nAn additional surcharge of 20% is: Rs. ${Math.round((20*(Math.round(1.20*totalBill)))/100)}
+      \nTotal Bill: ${Math.round(1.20*totalBill) + Math.round((20*(Math.round(1.20*totalBill)))/100)}`);
+
+    
+    } else if (totalBill > 250) {
+
+      alert(`Total Bill: Rs. ${Math.round(1.50*totalBill)}
+      \nAn additional surcharge of 20% is: Rs. ${Math.round((20*(Math.round(1.50*totalBill)))/100)}
+      \nTotal Bill: ${Math.round(1.50*totalBill) + Math.round((20*(Math.round(1.50*totalBill)))/100)}`);
+      
+    } else {
+
+      alert(`Enter Valid Units`);
+      
+    }
+
+
+  </script>
+</body>
+</html>
