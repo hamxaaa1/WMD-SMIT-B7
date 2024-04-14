@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      let nums = [1,2,3,33,44,77,123,222,546,666]
+      let num = 546;
+      
+      let start = 0;
+      let end = nums.length;
+
+      let ans = -1;
+
+      while (start <= end) {
+        let mid = Math.floor((start + end) / 2);
+
+        if (nums[mid] == num) {
+          ans = mid;
+          break;
+        }
+
+        if (nums[mid] < num) {
+          start = mid + 1;
+        } else {
+          end = mid - 1;
+        }
+      }
+      console.log(ans);
+  </script>
+</body>
+</html>

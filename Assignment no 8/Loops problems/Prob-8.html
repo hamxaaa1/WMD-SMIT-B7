@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  
+    let numArray = [2,33,4,5,68,9,11,33,2,223,2222,456]
+
+    let largeNum = -Infinity;
+
+    for (let index = 0; index < numArray.length; index++) {
+      if (largeNum < numArray[index]) {
+        largeNum = numArray[index];
+      }
+    }
+    console.log(largeNum);
+  </script>
+</body>
+</html>
