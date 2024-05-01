@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let count = 0;
+    function vowelString(str) {
+      for (let i = 0; i < str.length; i++) {
+        let newString = str[i];
+        if (newString == "a" || newString == "e" || newString == "i" || newString == "o" || newString == "u" ||newString == "A" || newString == "E" || newString == "I" || newString == "O" || newString == "U") {
+          count = count + 1;
+        }
+      }
+      console.log(count);
+    }
+    let word = "aeiouAEIOU";
+    vowelString(word);
+
+  </script>
+</body>
+</html>

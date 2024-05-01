@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function removeNonAlphabetic(text) {
+      let result = '';
+      for (let i = 0; i < text.length; i++) {
+        let charCode = text.charCodeAt(i);
+        if (charCode >= 65 && charCode <= 90 || charCode >= 97 && charCode <= 122) {
+          result = result + text[i]
+        }
+      }
+      return result;
+    }
+
+    let text1 = 'Hello World'
+    let text2 = '0 1 2 3 4 5 6 7 8 9'
+    let text3 = '0 zero 1 one 2 two 3 three'
+
+    let outputText1 = removeNonAlphabetic(text1)
+    let outputText2 = removeNonAlphabetic(text2)
+    let outputText3 = removeNonAlphabetic(text3)
+
+    console.log(outputText1);
+    console.log(outputText2);
+    console.log(outputText3);
+
+
+
+  
+
+
+    
+
+  </script>
+</body>
+</html>

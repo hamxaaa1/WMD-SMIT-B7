@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function domainName(url) {
+      url = url.replace("http://", "")
+      url = url.replace("https://", "")
+      url = url.replace("www.", "")
+      return url.split(".")[0];
+
+    }
+    const url1 = "https://www.example.com";
+    const url2 = "http://google.com";
+
+    let domainName1 = domainName(url1);
+    let domainName2 = domainName(url2);
+
+    console.log(domainName1);
+    console.log(domainName2);
+
+  </script>
+</body>
+</html>

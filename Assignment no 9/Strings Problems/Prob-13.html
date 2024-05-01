@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+
+  function emailValidation(email) {
+    const regex = /^([a-zA-Z0-9!@#\$%\^\&*\)\(+=._-]+)@([a-zA-Z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+    return regex.test(email);
+  }
+  const email1 = "johndoe@example.com";
+  const email2 = "invalid_email";
+  const email3 = "user+name@subdomain.example.com";
+  const email4 = "student123@gmail.com"
+  console.log(emailValidation(email1));
+  console.log(emailValidation(email2));
+  console.log(emailValidation(email3));
+  console.log(emailValidation(email4));
+
+
+
+
+  </script>
+</body>
+</html>
