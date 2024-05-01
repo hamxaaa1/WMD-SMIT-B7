@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <script>
-    
-  </script>
+
+
+    <script>
+        let str1 = prompt("Enter First String :")
+        let str2 = prompt("Enter Second String :")
+
+        function isAnagram(str1, str2) {
+            if (str1.length !== str2.length) {
+            return false;
+            }
+            return str1.toLowerCase().split('').sort().join('') === 
+                str2.toLowerCase().split('').sort().join('');  
+        }
+
+        if (isAnagram(str1,str2)) {
+            console.log(`The ${str1} is an anagram to ${str2}`)
+        } else {
+            console.log(`The ${str1} is not an anagram to ${str2}`)
+        }
+    </script>
 </body>
 </html>

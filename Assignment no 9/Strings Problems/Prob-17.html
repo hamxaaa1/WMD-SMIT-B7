@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <script>
-    
-  </script>
+
+  
+    <script>
+        let str = prompt("Enter a String :");
+        function isPalindromePermutation(str) {
+            const charCounts = {}; // Store character counts
+            let oddCount = 0; // Count characters with odd frequencies
+        
+            // Normalize and count characters
+            for (let char of str.toLowerCase()) {
+            if (char !== ' ') { // Ignore spaces
+                charCounts[char] = (charCounts[char] || 0) + 1; 
+                oddCount += charCounts[char] % 2 ? 1 : -1; 
+            }
+            }
+        
+            return oddCount <= 1; // At most one character can have odd frequency
+        }
+            
+        if (isPalindromePermutation(str)) {
+            console.log(`${str} is a Valid Palindrome Permutation`);
+        } else {
+            console.log(`${str} is an Invalid Palindrome Permutation`);
+        }
+        
+    </script>
 </body>
 </html>

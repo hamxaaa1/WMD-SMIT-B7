@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 09</title>
 </head>
 <body>
-  <script>
+
     
-  </script>
+    <script>
+        let str = prompt("Enter a String :");
+
+        function toTitleCase(str) {
+            return str.toLowerCase().split(' ').map(word => {
+            return word[0].toUpperCase() + word.slice(1); 
+            }).join(" ");
+        }
+        
+        console.log(toTitleCase(str));
+        
+    </script>
 </body>
 </html>
