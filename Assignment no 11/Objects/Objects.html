@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+
+
+
+
+
+
+
+  // Task 1: Object Creation
+  // Create an empty object and assign it to a variable. 
+
+  // let obj = {};
+
+
+
+  // Create an object with properties for name, age, and profession.
+
+    // let obj = {
+    //   name: "Hamza Ashfaq",
+    //   age: 19,
+    //   profession: "Software Engineer"
+    // }
+
+
+
+
+
+
+
+
+
+
+
+    // Task 2: Object Properties
+    // Access and print the values of properties from an object.
+
+    // let obj = {
+    //   name: "Hamza Ashfaq",
+    //   age: 19,
+    //   profession: "Software Engineer"
+    // }
+    // console.log(obj);
+    // console.log(obj.name);
+    // console.log(obj.age);
+    // console.log(obj["profession"]);
+    // console.log(Object.keys(obj));
+    // console.log(Object.values(obj));
+
+
+    // // Modify the value of a property in an object.
+
+    // obj.profession = "doctor";
+    // console.log(obj);
+
+
+    // // Add a new property to an existing object.
+
+    // obj.degree = "BSCS";
+    // console.log(obj);
+
+
+
+    // Task 3: Object Methods
+    // Create an object method that prints a message to the console.
+
+    // let obj = {
+    //   sayHello: function () {
+    //     console.log("HELLO WORLD!");
+    //   }
+    // }
+
+    // obj.sayHello()
+
+
+    // Create a method that calculates and returns a value based on object properties.
+
+    // let obj = {
+    //   name: "Hamza Ashfaq",
+    //   age: 19,
+    //   marks1: 79,
+    //   marks2: 86,
+    //   marks3: 66,
+    //   marks4: 97,
+    //   calculate: function () {
+    //     return `${this.name} whose age is ${this.age} got total ${this.marks1 + this.marks2 + this.marks3 + this.marks4} Marks`
+    //   }
+    // }
+    // console.log(obj.calculate());
+    // obj.calculate();
+
+
+    // Task 4: Object Iteration
+    // Iterate over the properties of an object and print their values.
+
+    // let obj = {
+    //   name: "Hamza Ashfaq",
+    //   age: 19,
+    //   profession: "Software Engineer"
+    // }
+
+    // for (const key in obj) {
+    //   console.log(key + ": " + obj[key]);
+    // }
+
+
+    // Iterate over the properties of an object and perform a specific action for each property.
+
+
+
+    // let obj = {
+    //   name: "Hamza Ashfaq",
+    //   age: 19,
+    //   profession: "Software Engineer",
+    //   isGoodStudent: true,
+    //   greet: function () {
+    //     console.log(`Hello my name is ${this.name} and I'm ${this.age} years old and my profession is ${this.profession}`);
+    //   }
+    // }
+
+
+    // function specificAction(key, values) {
+    //   console.log(`key: ${key} values: ${values}`);
+    //   if (typeof values == "string") {
+    //     console.log(`${values} is a string`);
+    //   } else if (typeof values == "number") {
+    //     console.log(`${values} is a number`);
+    //   } else if (typeof values == "boolean") {
+    //     console.log(`${values} is a boolean`);
+    //   } else if (typeof values == "function") {
+    //     console.log(`${values} is a function`);
+    //     values.call(obj)
+    //   }
+    // }
+
+    // for (const key in obj) {
+    //   specificAction(key, obj[key])
+    // }
+
+
+
+
+
+
+
+
+
+
+
+  // Task 5: Object Comparison
+  // Compare two objects to check if they have the same properties and values.
+
+
+
+  // let obj = {
+  //     name: "Hamza Ashfaq",
+  //     age: 19,
+  //     profession: "Software Engineer"
+  //   }
+
+  //   let person = {
+  //     name: "Hamza Ashfaq",
+  //     age: 19,
+  //     profession: "Software Engineer"
+  //   }
+
+  //   if (JSON.stringify(obj) === JSON.stringify(person)) {
+  //     console.log("Both have similar values");
+  //   }
+
+
+  // Compare two objects to check if they refer to the same object in memory.
+
+  // let a = {
+  //   name: "Hamza Ashfaq",
+  //   age: 19
+  // }
+
+  // let A1 = a;
+
+  // let b = {
+  //   name: "Hamza Ashfaq",
+  //   age: 19
+  // }
+
+  
+
+  // let c = a === b;
+  // let d = a === A1;
+  // console.log(c);
+  // console.log(d);
+
+
+
+
+  //   Task 6: Object Nesting
+  // Create an object that contains another object as one of its properties.
+
+
+  // let obj = {
+  //   name: "Hamza Ashfaq",
+  //   age: 19,
+  //   qualification: {
+  //     degree: "bscs",
+  //     school: "The Smart School",
+  //     college: "The Aspire College"
+  //   },
+  //   hobbies: {
+  //     hobby1: "gaming",
+  //     hobby2: "gym",
+  //     hobby3: "reading"
+  //   }
+  // }
+  // console.log(Object.keys(obj));
+  // console.log(Object.values(obj));
+
+  
+
+
+
+  // Access and modify properties of a nested object.
+
+
+
+    // accessing properties 
+
+  // console.log(obj.qualification.degree);
+  // console.log(obj.qualification.school);
+  // console.log(obj.qualification.college);
+
+  // console.log(obj.hobbies.hobby1);
+  // console.log(obj.hobbies.hobby2);
+  // console.log(obj.hobbies.hobby3);
+
+
+
+
+  // modifying properties
+
+  // obj.qualification.degree = "Business & Management";
+  // obj.qualification.school = "The Makkah School";
+  // obj.qualification.college = "The Kips College";
+
+  // obj.hobbies.hobby1 = "Sports";
+  // obj.hobbies.hobby2 = "Football";
+  // obj.hobbies.hobby3 = "Cricket";
+
+
+  // accessing properties 
+
+  // console.log(obj.qualification.degree);
+  // console.log(obj.qualification.school);
+  // console.log(obj.qualification.college);
+
+  // console.log(obj.hobbies.hobby1);
+  // console.log(obj.hobbies.hobby2);
+  // console.log(obj.hobbies.hobby3);
+
+
+
+
+
+  
+
+
+
+
+  // Task 7: Object Prototypes
+  // Create a prototype object and use it to create multiple instances of objects.
+
+
+  // function Person (persons_name, persons_age, persons_height) {
+  //   this.name = persons_name,
+  //   this.age = persons_age,
+  //   this.height = persons_height
+  // }
+
+  // // persons instances
+
+  // const person1 = new Person("Hamza Ashfaq", 19, "6'1");
+  // const person2 = new Person("Danyal Aziz", 20, "5'10");
+  // const person3 = new Person("Tauseef Ahmad", 20, "6");
+
+  // // console.log(person1, person2, person3);
+
+  // Person.prototype.favHobby = "gaming";
+
+  // console.log(`${person1.name} likes ${Person.prototype.favHobby}`);
+
+
+
+  // // Add a method to the prototype object and observe its effect on the instances.
+
+  // Person.prototype.hobby = function () {
+  //   console.log(`${this.name} favourite hobby is ${this.favHobby}`);
+  // }
+
+  // person1.hobby();
+  // person2.hobby();
+  // person3.hobby();
+
+
+
+
+  // Task 8: Object Serialization
+  // Convert an object to a JSON string using JSON.stringify().
+
+
+  // let human = {
+  //   name: "Hamza Ashfaq",
+  //   age: 19,
+  //   height: "6'1"
+  // }
+
+  // const humanJSON = JSON.stringify(human);
+  // console.log(humanJSON);
+
+
+  // // Parse a JSON string and convert it back to an object using JSON.parse().
+
+  // const humanObject = JSON.parse(humanJSON);
+  // console.log(humanObject);
+
+
+  
+
+  // Task 9: Object Destructuring
+  // Use object destructuring to extract specific properties from an object.
+
+
+
+  // let obj = {
+  //   name: "Hamza Ashfaq",
+  //   age: 19,
+  //   height: "6'1",
+  //   isGoodStudent: true,
+  //   qualification: {
+  //     degree: "bscs",
+  //     school: "The Smart School",
+  //     college: "The Aspire College"
+  //   },
+  //   hobbies: {
+  //     hobby1: "gaming",
+  //     hobby2: "gym",
+  //     hobby3: "reading"
+  //   }
+  // }
+
+  // const {name,age} =  obj;
+  // console.log(name);
+  // console.log(age);
+
+  // const {qualification} = obj;
+  // console.log(qualification);
+
+  // const {qualification: {degree}} = obj;
+  // console.log(degree);
+
+  // // We can also change name for name conflicts or you want to change
+  
+  // const {age: hamzaAge} = obj;
+  // console.log(hamzaAge);
+
+  // // we can also add property but will be non existent in object
+  // const {height,isGoodStudent, language = "Urdu"} =  obj;
+  // console.log(height, isGoodStudent, language);
+
+
+
+
+  // Task 10: Object Property Enumeration
+  // Use Object.keys() to get an array of all the property names of an object.
+
+
+  // let obj = {
+  //   name: "Hamza Ashfaq",
+  //   age: 19,
+  //   height: "6'1",
+  //   isGoodStudent: true,
+  //   qualification: {
+  //     degree: "bscs",
+  //     school: "The Smart School",
+  //     college: "The Aspire College"
+  //   },
+  //   hobbies: {
+  //     hobby1: "gaming",
+  //     hobby2: "gym",
+  //     hobby3: "reading"
+  //   }
+  // }
+
+  // let propertiesName = Object.keys(obj);
+  // console.log(propertiesName);
+
+
+
+
+  // Task 11: Object Inheritance
+  // Create a parent object and a child object that inherits properties and methods from the parent.
+
+
+  //   function Vehicle(make, model) {
+  //     this.make = make;
+  //     this.model = model;
+  // }
+
+  // Vehicle.prototype.drive = function() {
+  //     console.log(`${this.make} ${this.model} is moving!`);
+  // };
+
+  // // Child Object (Constructor Function)
+  // function Car(make, model, year) {
+  //     Vehicle.call(this, make, model);  // Inherit properties from Vehicle
+  //     this.year = year;
+  // }
+
+  // Car.prototype = Object.create(Vehicle.prototype);  // Inherit methods
+  // Car.prototype.constructor = Car;  // Fix the constructor property
+
+  // // Create instances
+  // const myCar = new Car("Toyota", "Camry", 2023);
+  // myCar.drive();
+
+
+
+
+
+
+
+
+  // Task 12: Object Privacy
+  // Create private properties in an object using closures;
+
+  // function private(name, age) {
+  //   let privateAge = age;
+  //   return {
+  //    name,
+  //    greet() {
+  //    console.log(`Hello, my name is ${name} and I'm ${privateAge} years old.`);
+  //   },
+  // };
+  // }
+
+  // let print = private("Hamza", 19)
+  // console.log(print);
+  // print.greet();
+
+
+  // Create private properties in an object using symbols;
+
+  // let newPrivateSymbol = Symbol("privateAge")
+
+  // let obj = {
+  //   name: "Hamza Ashfaq",
+  //   age: newPrivateSymbol,
+  //   greet: function () {
+  //    console.log(`Hello, my name is ${this.name} and I'm ${this.newPrivateSymbol} years old.`);
+  //   }
+  // }
+  // console.log(Object.keys(obj));
+  // console.log(Object.values(obj));
+  // obj.greet();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
