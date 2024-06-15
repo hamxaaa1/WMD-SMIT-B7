@@ -1,0 +1,78 @@
+.h1-tag-1, 
+.h1-tag-2 {
+  text-align: center;
+  color: yellow;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.h1-tag-1 {
+  font-size: 28px;
+}
+.h1-tag-2 {
+  font-size: 24px;
+}
+
+body {
+  background-color: #111111d5;;
+}
+
+
+.container {
+  margin: auto;
+  text-align: center;
+  background-color: black;
+  width: 300px;
+  border-radius: 20px;
+  padding: 11px;
+}
+.input-div {
+  margin-bottom: 3%;
+}
+.input-cls {
+  width: 270px;
+  padding: 10px;
+  word-spacing: -10px;
+  text-align: right;
+  padding-top: 25px;
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 40px;
+}
+input::placeholder { 
+  color: white;
+}
+button {
+  /* padding: 25px; */
+  height: 65px;
+  width: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 8px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  opacity: 0.7;
+}
+.zero_btn {
+  width: 130px;
+}
+.lt-gray-btn,
+.yellow-btn,
+.gray-btn {
+  border-radius: 40px;
+  border: none;
+  background-color: #A5A5A5;
+}
+.yellow-btn {
+  background-color: #FF9F0A;
+  color: white;
+}
+.gray-btn {
+  background-color: #333333;
+  color: white;
+}
