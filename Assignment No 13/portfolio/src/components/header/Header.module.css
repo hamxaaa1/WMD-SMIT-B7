@@ -1,0 +1,149 @@
+#mainheaderdiv {
+  margin-top: 130px;
+  margin-bottom: 230px;
+}
+#headerRowDiv {
+  column-gap: 90px;
+}
+#headerTitle {
+  color: #F7DCB3;
+  font-size: 28px;
+}
+#headerDesc {
+  color: #F7DCB3;
+  font-size: 70px;
+  line-height: 117px;
+}
+#headerScrollBtn {
+  border-radius: 60px;
+  border-color: #4d3611;
+  border-width: 3px;
+  border-style: solid;
+  background-color: inherit;
+  padding: 17px;
+  margin-top: 60px;
+}
+@media only screen and (max-width: 1319px) {
+  #headerDesc {
+    font-size: 60px;
+    line-height: 97px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #headerDesc {
+    font-size: 53px;
+    word-spacing: 2px;
+    line-height: 77px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #mainheaderdiv {
+    margin-top: 80px;
+  }
+  #headerDesc {
+    font-size: 40px;
+    word-spacing: 5px;
+    line-height: 84px;
+  }
+}
+@media only screen and (max-width: 853px) {
+  #headerScrollBtn  {
+    margin-top: 60px;
+  }
+  #headerDesc {
+    font-size: 30px;
+    word-spacing: 5px;
+    line-height: 59px;
+  }
+}
+@media only screen and (max-width: 699px) {
+  #headerScrollBtn {
+    margin-top: 50px;
+  }
+  #headerTitle {
+    font-size: 18px;
+  }
+  
+  #headerDesc {
+    font-size: 26px;
+    word-spacing: 2px;
+    line-height: 59px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #headerScrollBtn {
+    margin-top: 40px;
+    margin-bottom: 65px;
+  }
+  #mainheaderdiv {
+    margin-top: 50px;
+  }
+  #headerTitle {
+    font-size: 24px;
+  }
+  #headerProfilePic {
+    max-width: 85%;
+  }
+  #headerDesc {
+    font-size: 43px;
+    word-spacing: 5px;
+    line-height: 59px;
+  }
+}
+
+
+
+
+#headerAboutlink {
+  font-size: 25px;
+  color: #EA8F10;
+}
+#headerqoute {
+  font-size: 90px;
+  line-height: 89px;
+  word-spacing: -3px;
+  color: #fef6c6f0;
+  margin-bottom: 70px;
+}
+#headeraboutmebtn {
+  display: block;
+  background-color: inherit;
+  font-size: 25px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #FEF6C6;
+  padding: 10px 35px;
+  color: #FEF6C6;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+#headeraboutmebtn:hover {
+  background-color: #FEF6C6;
+  color: black;
+}
+#socialTagsLinks {
+  margin-bottom: 30px;
+}
+
+#headerAboutmePara {
+  color: #FEF6C6;
+  font-size: 25px;
+}
+@media only screen and (max-width: 900px) {
+  #headerqoute {
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #headerqoute {
+    font-size: 95px;
+    line-height: 110px;
+  }
+}
+@media only screen and (max-width: 583px) {
+  #headerqoute {
+    font-size: 78px;
+    line-height: 90px;
+  }
+}

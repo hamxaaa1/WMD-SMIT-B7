@@ -1,0 +1,7 @@
+.navDiv {
+  background-color: #212321 !important;
+  padding-bottom: 150px;
+}
+body {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,70 @@
+#contactMainDIv {
+  background-color: #212722;
+  padding: 80px 0px;
+}
+#contactHeading {
+  color: #CA8F10;
+  font-size: 30px;
+}
+
+#contactGitHeading {
+  font-size: 80px;
+  color: #FEF6E6;
+}
+
+
+
+
+#contactSectionHeading {
+  font-size: 70px;
+  line-height: 90px;
+}
+#contactSectionPara {
+  font-size: 25px;
+  width: 90%;
+}
+
+
+
+
+
+#workPTag {
+  font-size: 38px;
+  font-weight: bold;
+}
+#workParaTag {
+  font-size: 21px;
+}
+#contactBtnTag {
+  width: 100%;
+  background-color: #F1A63B;
+  font-size: 18px;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+
+
+#followPTag {
+  margin-top: 36px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+#EmailHeadingPTag {
+  margin-top: 54px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#Email {
+  margin-top: 3px;
+  font-size: 19px;
+}
+#GitPTag {
+  margin-top: 40px;
+  font-size: 36px;
+}

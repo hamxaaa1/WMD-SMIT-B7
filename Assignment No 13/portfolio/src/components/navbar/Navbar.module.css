@@ -1,0 +1,60 @@
+
+#navTitle {
+  color: #F7DCB3;
+  font-size: 37px;
+  font-weight: bold;
+}
+#topnav {
+  background-color: #212321 !important;
+  padding-top: 2.2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#navLinks {
+  color: #839585;
+  margin-left: 35%;
+  padding-left: 30px;
+  font-size: 20px;
+}
+#navLinks:hover {
+  color: #F7DCB3;
+}
+#navSearchInput {
+  color: black;
+  font-size: 17px;
+  box-shadow: none;
+  outline: 2px solid #f1a53bf8; /* Set a custom border color */
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+#navTogglerbtn {
+  background-color: #F7DCB3;
+  border: none;
+  border-color: #F7DCB3;
+}
+
+@media only screen and (max-width: 992px) {
+  #navTitle {
+    margin-bottom: 10px;
+  }
+  #navLinks {
+    color: #839585;
+    padding-left: 0px;
+    margin-left: 0%;
+    padding-top: 15px;
+    /* padding-left: 0%; */
+  }
+  #navForm {
+    margin-top: 25px;
+
+  }
+  #navSearchInput {
+    max-width: 100%;
+    /* width: 800px; */
+  }
+}
+/* @media only screen and (max-width: 552px) {
+  #navSearchInput {
+    max-width: 100%;
+    width: 400px;
+  }
+} */
