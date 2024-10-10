@@ -1,0 +1,23 @@
+.search-results {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6; 
+  padding: 10px;
+  margin-top: 5px; 
+  width: calc(100% - 1rem);
+  max-height: 200px; 
+  overflow-y: auto;  
+}
+
+.search-results h5 {
+  margin-bottom: 10px; 
+}
+
+.search-results ul {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0;
+}
+
+.search-results li {
+  padding: 5px 0; 
+}
